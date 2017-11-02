@@ -4,12 +4,14 @@ import {MTAppComponent} from "./app.component";
 import {CommonModule} from "@angular/common";
 import {MTLoaderModule} from "./loader/loader.module";
 import {RouterModule} from "@angular/router";
+import {MTSidebarModule} from "./sidebar/sidebar.module";
 
 @NgModule({
     imports: [
         RouterModule,
         CommonModule,
-        MTLoaderModule
+        MTLoaderModule,
+        MTSidebarModule
     ],
     declarations: [MTAppComponent],
     exports: [],

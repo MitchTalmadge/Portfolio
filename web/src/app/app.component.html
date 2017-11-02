@@ -1,4 +1,14 @@
 <div class="mt-app">
     <mt-loader></mt-loader>
-    <router-outlet></router-outlet>
+    <div id="mt-app-container"
+         class="container-fluid">
+        <div class="row h-100">
+            <div class="col-2 p-0">
+                <mt-sidebar></mt-sidebar>
+            </div>
+            <div id="mt-app-content-column" class="col-10">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
 </div>

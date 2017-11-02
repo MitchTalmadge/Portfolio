@@ -1,11 +1,13 @@
-.math-app {
+#mt-app-container {
     height: 100vh;
+}
 
-    background-color: #00b3ee;
+#mt-app-content-column {
+    overflow-y: auto;
 }
 
 /* Add pointer cursor to links without href, which Angular uses a lot of. (Because of the click event) */
-.math-app a:not([href]) {
+.mt-app a:not([href]) {
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
