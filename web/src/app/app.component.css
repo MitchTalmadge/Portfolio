@@ -1,0 +1,35 @@
+.math-app {
+    height: 100vh;
+
+    background-color: #00b3ee;
+}
+
+/* Add pointer cursor to links without href, which Angular uses a lot of. (Because of the click event) */
+.math-app a:not([href]) {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 16px;
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    background-clip: content-box;
+}

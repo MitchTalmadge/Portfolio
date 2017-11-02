@@ -1,0 +1,8 @@
+### Frontend ###
+node_modules/
+lib/
+bin/
+npm-debug.log*
+package-lock.json
+.awcache/
+src/*.js

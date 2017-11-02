@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "baseUrl": "./src/scripts",
+    "outDir": "./lib",
+    "lib": [
+      "dom",
+      "es7"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useWebpackText": true,
+    "useCache": true
+  },
+  "exclude": [
+    "node_modules",
+    "src/scripts/main-aot.ts"
+  ]
+}
