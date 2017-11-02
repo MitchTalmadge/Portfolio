@@ -1,5 +1,4 @@
 import {ErrorHandler, NgModule, Optional, SkipSelf} from "@angular/core";
-import {APIService} from "./services/api.service";
 import {LoaderService} from "./services/loader.service";
 import {CustomErrorHandler} from "./error-handler";
 import {HttpModule} from "@angular/http";
@@ -18,7 +17,6 @@ import {HttpModule} from "@angular/http";
             provide: ErrorHandler,
             useClass: CustomErrorHandler
         },
-        APIService,
         LoaderService,
     ],
 })
