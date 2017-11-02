@@ -15,7 +15,7 @@ config.plugins.push(
     // HTML Webpack Plugin with dev set to true.
     new HtmlWebpackPlugin({
         template: path.join(__dirname, '../index.html.ejs'),
-        favicon: path.join(__dirname, '../resources/favicons/favicon.ico'),
+        favicon: path.join(__dirname, '../resources/images/favicon.ico'),
         filename: path.join(config.output.path, 'index.html'),
         inject: 'body',
         minify: {

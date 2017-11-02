@@ -20,7 +20,6 @@
     "useCache": true
   },
   "exclude": [
-    "node_modules",
-    "src/scripts/main-aot.ts"
+    "node_modules"
   ]
 }
