@@ -7,6 +7,10 @@ const routes: Routes = [
         loadChildren: './features/home/home.module#MTHomeModule'
     },
     {
+        path: 'about',
+        loadChildren: './features/about/about.module#MTAboutModule'
+    },
+    {
         path: '**',
         redirectTo: '/',
         pathMatch: 'full'

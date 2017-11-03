@@ -1,19 +1,19 @@
 import {NgModule} from "@angular/core";
 
-import {MTHomeComponent} from "./home.component";
+import {MTAboutComponent} from "./about.component";
 import {SharedModule} from "../../shared/shared.module";
-import {MTHomeRoutesModule} from "./home.routes";
+import {MTAboutRoutesModule} from "./about.routes";
 
 @NgModule({
     imports: [
         SharedModule,
-        MTHomeRoutesModule,
+        MTAboutRoutesModule,
     ],
     declarations: [
-        MTHomeComponent,
+        MTAboutComponent,
     ],
     exports: [],
     providers: [],
 })
-export class MTHomeModule {
+export class MTAboutModule {
 }

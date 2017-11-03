@@ -1,11 +1,11 @@
 import {NgModule} from "@angular/core";
 import {RouterModule, Routes} from "@angular/router";
-import {MTHomeComponent} from "./home.component";
+import {MTAboutComponent} from "./about.component";
 
 const routes: Routes = [
     {
         path: '',
-        component: MTHomeComponent
+        component: MTAboutComponent
     }
 ];
 
@@ -18,5 +18,5 @@ const routes: Routes = [
     ],
     providers: []
 })
-export class MTHomeRoutesModule {
+export class MTAboutRoutesModule {
 }

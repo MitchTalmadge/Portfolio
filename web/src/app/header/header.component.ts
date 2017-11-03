@@ -24,6 +24,11 @@ export class MTHeaderComponent implements OnInit, OnDestroy {
             subtitle: '< Software Developer />',
             route: '/',
             strict: true
+        },
+        {
+            title: 'About Mitch',
+            route: '/about',
+            strict: true
         }
     ];
 
@@ -44,12 +49,12 @@ export class MTHeaderComponent implements OnInit, OnDestroy {
                 for (let contents of this.contents) {
                     // Strict routes must exactly match the url.
                     if (contents.strict) {
-                        if (event.url == contents.route) {
+                        if (event.urlAfterRedirects == contents.route) {
                             this.currentContents = contents;
                             break;
                         }
                     } else {
-                        if (event.url.startsWith(contents.route)) {
+                        if (event.urlAfterRedirects.startsWith(contents.route)) {
                             this.currentContents = contents;
                             break;
                         }
