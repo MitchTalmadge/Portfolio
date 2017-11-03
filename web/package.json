@@ -1,5 +1,7 @@
 {
   "name": "Portfolio",
+  "description": "The online portfolio of Mitch Talmadge",
+  "repository": "https://github.com/MitchTalmadge/Portfolio",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -26,9 +28,10 @@
     "rxjs": "^5.5.2",
     "svg-url-loader": "^2.2.0",
     "tether": "^1.4.0",
-    "typeface-droid-sans": "^0.0.35",
-    "typeface-roboto": "^0.0.35",
-    "typeface-ubuntu": "^0.0.35",
+    "typeface-droid-sans": "^0.0.43",
+    "typeface-roboto": "^0.0.43",
+    "typeface-ubuntu": "^0.0.43",
+    "typeface-raleway": "^0.0.43",
     "typescript-collections": "^1.2.5",
     "uuid": "^3.1.0",
     "zone.js": "^0.8.18"

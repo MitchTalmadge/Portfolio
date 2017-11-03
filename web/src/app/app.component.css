@@ -1,9 +1,7 @@
 #mt-app-container {
-    height: 100vh;
-}
-
-#mt-app-content-column {
-    overflow-y: auto;
+    min-height: 100vh;
+    width: calc(100vw - 225px);
+    margin-left: 225px;
 }
 
 /* Add pointer cursor to links without href, which Angular uses a lot of. (Because of the click event) */

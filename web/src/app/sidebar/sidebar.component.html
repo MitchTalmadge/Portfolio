@@ -2,4 +2,14 @@
     <a routerLink="/">
         <img id="mt-sidebar-logo" src="../../../resources/images/logo.svg"/>
     </a>
+
+    <div id="mt-sidebar-links">
+        <a class="mt-sidebar-link"
+           *ngFor="let link of links"
+           [routerLink]="link.route"
+           routerLinkActive="active"
+           [routerLinkActiveOptions]="{ exact: link.strict }">
+            {{link.name}}
+        </a>
+    </div>
 </div>
