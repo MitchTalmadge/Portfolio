@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnInit, ViewChild} from "@angular/core";
+import {Component} from "@angular/core";
 
 @Component({
     selector: 'mt-home',

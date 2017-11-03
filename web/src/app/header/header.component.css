@@ -1,0 +1,34 @@
+#mt-header {
+    width: 100%;
+    height: auto;
+
+    padding: 20px 20px 20px 0;
+
+    background: url('../../../resources/images/blue-background.jpg') no-repeat fixed;
+}
+
+#mt-header-glass {
+    width: 100%;
+
+    padding: 20px;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0 10px 10px 0;
+}
+
+#mt-header h1, #mt-header h2 {
+    font-family: Quicksand, sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#mt-header h1 {
+    color: #666;
+    font-size: 4rem;
+}
+
+#mt-header h2 {
+    color: #888;
+    font-size: 2rem;
+}

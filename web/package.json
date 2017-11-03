@@ -32,6 +32,7 @@
     "typeface-roboto": "^0.0.43",
     "typeface-ubuntu": "^0.0.43",
     "typeface-raleway": "^0.0.43",
+    "typeface-quicksand": "^0.0.43",
     "typescript-collections": "^1.2.5",
     "uuid": "^3.1.0",
     "zone.js": "^0.8.18"
