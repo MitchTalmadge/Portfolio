@@ -1,7 +1,7 @@
 #mt-app-container {
     min-height: 100vh;
-    width: calc(100vw - 225px);
-    margin-left: 225px;
+    padding-left: 225px;
+    padding-right: 0;
 }
 
 /* Add pointer cursor to links without href, which Angular uses a lot of. (Because of the click event) */
@@ -32,4 +32,12 @@
     border: 4px solid transparent;
     border-radius: 8px;
     background-clip: content-box;
+}
+
+/* Images */
+
+img.mt-image-round {
+    width: 300px;
+    border-radius: 300px;
+    border: 8px solid #A2C4CE;
 }
