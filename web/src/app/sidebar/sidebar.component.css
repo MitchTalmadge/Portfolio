@@ -31,6 +31,7 @@
     line-height: 40px;
     text-align: right;
     text-decoration: none;
+    user-select: none;
 }
 
 #mt-sidebar-links .mt-sidebar-link.active {
