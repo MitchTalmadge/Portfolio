@@ -43,11 +43,6 @@ export class MTSidebarComponent implements OnInit {
             strict: false
         },
         {
-            name: 'Articles',
-            route: '/articles',
-            strict: false
-        },
-        {
             name: 'Contact',
             route: '/contact',
             strict: true

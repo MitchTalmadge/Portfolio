@@ -2,7 +2,6 @@ import {NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
 import {MTAppComponent} from "./app/app.component";
 import {CoreModule} from "./core/core.module";
-import {FeaturesModule} from "./features/features.module";
 import {AppRoutesModule} from "./app.routes";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AppBootstrapModule} from "./app/app-bootstrap.module";
@@ -12,7 +11,6 @@ import {AppBootstrapModule} from "./app/app-bootstrap.module";
         BrowserModule,
         BrowserAnimationsModule,
         AppRoutesModule,
-        FeaturesModule,
         CoreModule,
 
         AppBootstrapModule

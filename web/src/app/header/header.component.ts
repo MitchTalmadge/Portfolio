@@ -29,6 +29,11 @@ export class MTHeaderComponent implements OnInit, OnDestroy {
             title: 'About Mitch',
             route: '/about',
             strict: true
+        },
+        {
+            title: 'Technical Skills',
+            route: '/skills',
+            strict: true
         }
     ];
 

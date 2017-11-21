@@ -11,6 +11,10 @@ const routes: Routes = [
         loadChildren: './features/about/about.module#MTAboutModule'
     },
     {
+        path: 'skills',
+        loadChildren: './features/skills/skills.module#MTSkillsModule'
+    },
+    {
         path: '**',
         redirectTo: '/',
         pathMatch: 'full'
