@@ -7,10 +7,20 @@
             <div class="carousel-inner">
                 <div *ngFor="let image of images; let i = index"
                      class="carousel-item"
-                     [class.active]="i == 0">
+                     [class.active]="currentImageIndex == i">
                     <img [src]="image" class="d-block w-100"/>
                 </div>
             </div>
+            <a class="carousel-control-prev"
+               *ngIf="images?.length > 1"
+               (click)="previousImage()">
+                <span class="fa fa-2x fa-angle-left"></span>
+            </a>
+            <a class="carousel-control-next"
+               *ngIf="images?.length > 1"
+               (click)="nextImage()">
+                <span class="fa fa-2x fa-angle-right"></span>
+            </a>
         </div>
 
     </div>
