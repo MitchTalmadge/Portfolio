@@ -21,7 +21,7 @@ export class MTHeaderComponent implements OnInit, OnDestroy {
     readonly contents: [{ title: string, subtitle?: string, route: string, strict: boolean }] = [
         {
             title: 'Mitch Talmadge',
-            subtitle: '< Software Developer />',
+            subtitle: '< Software Engineer />',
             route: '/',
             strict: true
         },
