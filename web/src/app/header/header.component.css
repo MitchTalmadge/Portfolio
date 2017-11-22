@@ -5,6 +5,7 @@
     padding: 20px 20px 20px 0;
 
     background: url('../../../resources/images/blue-background.jpg') no-repeat fixed;
+    background-size: cover;
 }
 
 #mt-header-glass {

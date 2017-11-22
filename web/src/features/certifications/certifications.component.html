@@ -1,8 +1,8 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-4">
-            <mt-showcase title="MTA – Software Development Fundamentals (C#)"
-                         [images]="['https://mitchtalmadge.com/wp-content/uploads/2016/04/SoftwareDevelopmentFundamentals.jpg', 'https://mitchtalmadge.com/wp-content/uploads/2016/04/SecurityFundamentals.jpg']">
+        <div class="col-4" *ngFor="let certification of certifications">
+            <mt-showcase [title]="certification.title"
+                         [images]="certification.images">
             </mt-showcase>
         </div>
     </div>

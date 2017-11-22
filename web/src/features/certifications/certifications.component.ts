@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {certifications} from './static/certification-definitions';
 
 @Component({
     selector: 'mt-certifications',
@@ -6,6 +7,8 @@ import {Component, OnInit} from '@angular/core';
 })
 
 export class MTCertificationsComponent implements OnInit {
+
+    certifications = certifications;
 
     constructor() {
     }
