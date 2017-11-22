@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<descriptions>
+    <java>
+        Java is, by far, my favorite programming language. I am completely self taught in Java SE and EE. I have created
+        multiple programs using both the Swing and JavaFX frameworks, and have used Java to create large scale web
+        applications using JBoss Wildfly. I love creating open source software to benefit the community, because I
+        believe large things can be achieved from small contributions. I am knowledgeable of many advanced Java concepts
+        and frameworks, including Inheritance, EJBs, Servlets, JSF, and JPA. In my efforts to solve real-world problems
+        with Java, I have teamed up to create a fully functional asset reservation system to replace outdated carbon
+        copies in schools and businesses. I am selling the system through my company, AptiTekk, LLC.
+    </java>
+    <android>
+        I have created multiple Android applications using Java and Android Studio. My most notable app, the "Bingham
+        App", was created in a team for Bingham High School in South Jordan, Utah. This app used many advanced features,
+        including overlaying the school map upon Google Maps. This allowed users to search for and find rooms easily,
+        and see the rooms' locations in relation to the school parking lots.
+    </android>
+    <linux>
+        This website and a couple of my other websites run on a Debian VPS (Virtual Private Server), installed and
+        maintained by myself. I have an excellent knowledge of the commands, tools, and software necessary to manage a
+        web server, and I am proficient in web server security. My server takes advantage of RSA keys and SSL
+        certificates, and I use an installation of ISPConfig to manage my websites.
+    </linux>
+    <php>
+        PHP is one of my favorite programming languages. I love creating secure and efficient server-sided code that
+        serves a purpose. On an old website, I used PHP to create a rudimentary-yet-functional forum system, allowing
+        users to register for an account and make threads and posts. It taught me a lot about implementing MySQL
+        queries, avoiding SQL injections, and validating user input. I also learned to ensure that users’ private
+        information, such as passwords and email addresses, were securely stored within the databases, and hashed where
+        necessary.
+    </php>
+    <mysql>
+        I have a strong grasp of MySQL queries, and am very confident in creating software and web applications that
+        implement MySQL. I have used MySQL in quite a few projects in the past. MySQL is an integral part of an error
+        report system built into many of my programs, allowing users to send logs and comments if the program crashes.
+        All of my websites use MySQL, and are managed from the web via phpMyAdmin, and remotely via MySQL Workbench.
+        Some of my software also includes support for SQLite, which is a great lightweight, file-based alternative to
+        MySQL for small applications.
+    </mysql>
+    <wordpress>
+        WordPress is consistently my #1 choice when deciding what framework to use when building websites. Most people
+        see WordPress as something only used when creating blogs, but I find that it can be used for so much more; from
+        blogs, to online marketplaces, to portfolios. In fact, this website runs on WordPress. I find comfort in using
+        WordPress for many reasons, but mainly because of the ease-of-use and proven security. I have a lot of
+        experience designing websites with WordPress, and I know how to make it do what I need it to do. I hope one day
+        to create plugins for WordPress and give back to the amazing community.
+    </wordpress>
+    <autodesk>
+        I love Autodesk products. Autodesk has many amazing tools that have assisted me in many ways. I am skilled in
+        Inventor and Maya, and have a bit of experience working with 3ds Max.
+        Using Inventor, I have created 3D visual models of most of my projects in woodshop at school, which gave me the
+        chance to build and scale them exactly how I wanted them, then create drawings of the parts. This made the whole
+        process of building my projects so much easier and faster, as I had the exact dimensions of every part and knew
+        exactly how to assemble the projects. My favorite project was a hardwood porch swing I built from scratch.
+        I have taken a half year class on Maya, and really enjoyed it. I am very capable of creating 3D models in Maya,
+        and I know how to work with many different types of materials, including Phong, Blinn, and Mental Ray. I have
+        created everything from small buildings to video game characters using Maya.
+    </autodesk>
+    <adobe>
+        I use Adobe products constantly when designing websites and software. My two favorite tools are Photoshop and
+        Illustrator, and I feel very confident and skilled while using them. I have experience using InDesign, Flash,
+        Dreamweaver, Acrobat, and Bridge as well. I have studied the elements and principles of design, and I try to
+        always create pleasing graphics, fine tuning them to perfection.
+        I find Illustrator very useful in many different situations, not just in web design. For example, I have used
+        Illustrator to design parts to be cut out of sheet metal and aluminum, which were used when building a truck at
+        school. Illustrator is my go-to choice when designing logos, because I want to always retain the quality of the
+        logo at any scale.
+        I think Adobe products are invaluable and you can never go wrong with learning how to use them.
+    </adobe>
+</descriptions>
