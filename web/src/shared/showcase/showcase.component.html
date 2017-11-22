@@ -1,0 +1,17 @@
+<div class="mt-showcase-wrapper m-3">
+    <div class="mt-showcase-header">
+        <h2 class="text-center">{{title}}</h2>
+    </div>
+    <div class="mt-showcase-images">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div *ngFor="let image of images; let i = index"
+                     class="carousel-item"
+                     [class.active]="i == 0">
+                    <img [src]="image" class="d-block w-100"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -2,6 +2,7 @@ import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
+import {MTShowcaseModule} from "./showcase/showcase.module";
 
 /**
  * This module is dedicated to highly re-usable components that are used often in feature components (pages, etc)
@@ -12,14 +13,19 @@ import {RouterModule} from "@angular/router";
         FormsModule,
         ReactiveFormsModule,
         RouterModule,
+
+        // Components
+        MTShowcaseModule
     ],
     declarations: [],
     exports: [
-        // Common modules used throughout the application
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
         RouterModule,
+
+        // Components
+        MTShowcaseModule
     ],
     providers: [],
 })

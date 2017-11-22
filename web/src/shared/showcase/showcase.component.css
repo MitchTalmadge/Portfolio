@@ -1,0 +1,23 @@
+/* General */
+
+.mt-showcase-wrapper {
+    background: url('../../../resources/images/blue-background.jpg') no-repeat fixed;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.mt-showcase-header, .mt-showcase-images {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Header */
+
+.mt-showcase-header {
+    margin-bottom: 20px;
+}
+
+.mt-showcase-header h2 {
+    font-size: 22px;
+}
