@@ -41,16 +41,20 @@ const skills: [{ title: string, image: string, description?: string }] = [
 /**
  * This xml file contains descriptions of skills.
  */
-const descriptions = require('./skill-descriptions.xml');
+const descriptions: string = require('./skill-descriptions.html');
 
 /**
  * Compiles and returns an array of skills,
  * each containing their titles, images, and descriptions.
  */
 export const getSkills = () => {
+    let descriptionsElement = document.createElement("div");
+    descriptionsElement.innerHTML = descriptions;
+
     // Populate skills variable with descriptions from file.
     for (let skill of skills) {
-        skill.description = descriptions['descriptions'][skill.title.toLowerCase()];
+        console.log(descriptions);
+        skill.description = descriptionsElement.getElementsByClassName(skill.title.toLowerCase())[0].innerHTML;
     }
 
     return skills;
