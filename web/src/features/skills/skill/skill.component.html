@@ -1,5 +1,13 @@
-<h1>{{title}}</h1>
-<img [src]="src"/>
-<p>
-    <ng-content></ng-content>
-</p>
+<div class="card mt-skill-main-card">
+    <div class="card-body">
+        <div class="card mt-skill-icon-card">
+            <div class="card-body">
+                <img [src]="src"/>
+            </div>
+        </div>
+        <h1 class="card-title">{{title}}</h1>
+        <p>
+            <ng-content></ng-content>
+        </p>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+/* All Cards */
+
+.card {
+    border: none;
+    box-shadow: 1px 1px 6px 0 rgba(0,0,0,0.3);
+}
+
+/* Main Card */
+
+.mt-skill-main-card {
+    margin-left: 30px;
+}
+
+.mt-skill-main-card > .card-body {
+    padding-left: 130px;
+    font-size: 19px;
+    line-height: 2rem;
+}
+
+.mt-skill-main-card > .card-body > .card-title {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+/* Icon Card */
+
+.mt-skill-icon-card {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}

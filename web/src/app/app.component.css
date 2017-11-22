@@ -2,6 +2,9 @@
     min-height: 100vh;
     padding-left: 225px;
     padding-right: 0;
+
+    font-family: 'Nunito', sans-serif;
+    color: #666;
 }
 
 /* Add pointer cursor to links without href, which Angular uses a lot of. (Because of the click event) */

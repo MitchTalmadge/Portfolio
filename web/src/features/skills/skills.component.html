@@ -1,5 +1,10 @@
-<mt-skill *ngFor="let skill of skills"
-          [title]="skill.title"
-          [src]="skill.image">
-    {{skill.description}}
-</mt-skill>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6" *ngFor="let skill of skills">
+            <mt-skill [title]="skill.title"
+                      [src]="skill.image">
+                {{skill.description}}
+            </mt-skill>
+        </div>
+    </div>
+</div>
