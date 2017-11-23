@@ -1,0 +1,18 @@
+.mt-glass-panel-wrapper {
+    background: url('../../../resources/images/blue-background.jpg') fixed;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.mt-glass-panel-header, .mt-glass-panel-body {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Header */
+
+.mt-glass-panel-header {
+    margin-bottom: 20px;
+}

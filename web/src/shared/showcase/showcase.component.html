@@ -1,8 +1,8 @@
-<div class="mt-showcase-wrapper mb-4">
-    <div class="mt-showcase-header">
-        <h2 class="text-center">{{title}}</h2>
-    </div>
-    <div class="mt-showcase-images">
+<mt-glass-panel>
+    <mt-glass-panel-header>
+        <h2 class="text-center mb-0">{{title}}</h2>
+    </mt-glass-panel-header>
+    <mt-glass-panel-body>
         <div class="carousel">
             <div class="carousel-inner">
                 <div *ngFor="let image of images; let i = index"
@@ -22,6 +22,5 @@
                 <span class="fa fa-2x fa-angle-right"></span>
             </a>
         </div>
-
-    </div>
-</div>
+    </mt-glass-panel-body>
+</mt-glass-panel>
