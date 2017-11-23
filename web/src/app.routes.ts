@@ -19,6 +19,10 @@ const routes: Routes = [
         loadChildren: './features/certifications/certifications.module#MTCertificationsModule'
     },
     {
+        path: 'awards',
+        loadChildren: './features/awards/awards.module#MTAwardsModule'
+    },
+    {
         path: '**',
         redirectTo: '/',
         pathMatch: 'full'
