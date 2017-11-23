@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 import {MTContactComponent} from './contact.component';
 import {SharedModule} from "../../shared/shared.module";
 import {MTContactRoutesModule} from "./contact.routes";
+import {MTContactFormComponent} from "./contact-form/contact-form.component";
 
 @NgModule({
     imports: [
@@ -10,7 +11,10 @@ import {MTContactRoutesModule} from "./contact.routes";
         MTContactRoutesModule
     ],
     exports: [],
-    declarations: [MTContactComponent],
+    declarations: [
+        MTContactComponent,
+        MTContactFormComponent
+    ],
     providers: [],
 })
 export class MTContactModule {
