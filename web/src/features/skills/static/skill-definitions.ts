@@ -53,7 +53,6 @@ export const getSkills = () => {
 
     // Populate skills variable with descriptions from file.
     for (let skill of skills) {
-        console.log(descriptions);
         skill.description = descriptionsElement.getElementsByClassName(skill.title.toLowerCase())[0].innerHTML;
     }
 

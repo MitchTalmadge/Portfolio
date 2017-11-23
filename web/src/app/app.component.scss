@@ -1,5 +1,17 @@
 @import "~bootstrap/scss/bootstrap-grid.scss";
 
+html {
+  font-size: 19px;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
 #mt-app-container {
   min-height: 100vh;
   padding-left: 225px;

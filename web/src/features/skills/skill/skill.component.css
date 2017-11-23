@@ -14,12 +14,10 @@
 
 .mt-skill-main-card > .card-body {
     padding-left: 130px;
-    font-size: 19px;
     line-height: 2rem;
 }
 
 .mt-skill-main-card > .card-body > .card-title {
-    font-size: 30px;
     font-weight: normal;
 }
 

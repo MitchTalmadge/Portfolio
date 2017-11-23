@@ -3,7 +3,7 @@
         <div class="col-12 col-xl-6" *ngFor="let skill of skills">
             <mt-skill [title]="skill.title"
                       [src]="skill.image">
-                {{skill.description}}
+                <div [innerHtml]="skill.description"></div>
             </mt-skill>
         </div>
     </div>
