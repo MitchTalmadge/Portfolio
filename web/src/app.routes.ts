@@ -23,6 +23,10 @@ const routes: Routes = [
         loadChildren: './features/awards/awards.module#MTAwardsModule'
     },
     {
+        path: 'contact',
+        loadChildren: './features/contact/contact.module#MTContactModule'
+    },
+    {
         path: '**',
         redirectTo: '/',
         pathMatch: 'full'
