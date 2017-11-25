@@ -189,3 +189,4 @@ typings/
 
 
 /package-lock.json
+/server/target/
