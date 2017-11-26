@@ -27,30 +27,32 @@ jobs:
         - psql -c 'create database portfolio;' -U postgres
 
     - stage: deploy
+      sudo: required
       language: java
+      before_script:
+        - wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+        - heroku plugins:install heroku-cli-deploy
       script: skip
       before_deploy:
-        - cd server
+        - cd server # Clean up Server
         - mvn clean
 
-        - cd ../web
+        - cd ../web # Build Web Project
         - nvm install "6.11.4"
         - npm install
         - npm run build
 
-        - cd ../server
+        - cd ../server # Copy Web into Server for building
         - mkdir target/classes/static
         - mv ../web/bin/* target/classes/static/
-        - mvn install -DskipTests=true -Dmaven.javadoc.skip=true
 
-        - cd ..
+        - mvn install -DskipTests=true -Dmaven.javadoc.skip=true # Build Server
+
+        - cd .. # Move built Server jar to root
         - mv server/target/portfolio.jar .
-        - git add portfolio.jar
-        - git commit -a -m "Automatic Travis Jar Build Commit"
       deploy:
-        provider: heroku
-        api_key:
-          secure: Ufd3GWuOuIcbIIL5FmF3ieu0bw2SW6esbEGJGcqVeJGQMYxhGVR2oWpmMDY1xBtWyd138GzuSgpv9X+ZkLTNO9q2bY2kyXHW+iiSMVE88GUVvJE325HriQx1zNNjEiVHwGxEMRgu57aqOh8gx3M3faditT+BAGa6pZ0gA+jPwT6EuZWWYkXqUN/vD9YzpIDUEhrC2An/SH8EgKUpYCezdC3Ykwx/dqpxqI9sxurs3NWBBhYhGfhPGsSSfPoiIVHMj5UwKtRWLmxNJmwiimiQi0cN1L/HWmELtlJGmZvs665JvjRr6XYvs3F+bS9hedMAQBN+IKayUgGBGUTA+bsn6TFNLb+fEM0iBj9youR3bcWzay1bHUnJY+U4fPjm4ilRD6AljZ/+sADnMlEVqppwkUiCCTdz7UPv0wr7aQryVSRrCi+fpep0mxOEMOfaPgGydMaPFmR0756xpx/DE3+xuSOEAFoiTJG6JgRokriq1p8UHsBtdTUarxGXPcJ8Qxl9BnlcznI0LjNhy05K9Tn1MeeLFa5bJSwI/czsILrcWFO9QEcusEZVrwMp9vwdPe/dUL3tiol7mp3SOujwJswvUADp4lTbB9+rcN7wo+oIFd6XE7iwJ/ggIdyKoqoaRJWV+snXeossTY6HCDa6jYk2qarb2UVqDKKvKALwBBgSo4Y=
-        app: mitchtalmadge-portfolio
+        provider: script
+        script:
+          - heroku deploy:jar portfolio.jar --app mitchtalmadge-portfolio
         on:
           tags: true
