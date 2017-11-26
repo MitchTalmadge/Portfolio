@@ -6,4 +6,4 @@
  |_|  |_|  |_/_/   |_|   \___/|_|   \__|_| \___/|_|_|\___/
 
 Copyright Mitch Talmadge (https://mitchtalmadge.com)
-Apache-2.0 | https://github.com/MitchTalmadge/ShillOrKill | https://shillorkill.tk
+Apache-2.0 | https://github.com/MitchTalmadge/Portfolio | https://mitchtalmadge.com/
