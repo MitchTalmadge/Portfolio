@@ -43,7 +43,7 @@ jobs:
         - npm run build
 
         - cd ../server # Copy Web into Server for building
-        - mkdir target/classes/static
+        - mkdir -p target/classes/static
         - mv ../web/bin/* target/classes/static/
 
         - mvn install -DskipTests=true -Dmaven.javadoc.skip=true # Build Server
