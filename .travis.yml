@@ -51,6 +51,7 @@ jobs:
         - cd .. # Move built Server jar to root
         - mv server/target/portfolio.jar .
       deploy:
+        skip_cleanup: true
         provider: script
         script:
           - heroku deploy:jar portfolio.jar --app mitchtalmadge-portfolio
