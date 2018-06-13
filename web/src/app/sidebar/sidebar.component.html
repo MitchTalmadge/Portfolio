@@ -4,12 +4,19 @@
     </a>
 
     <div id="mt-sidebar-links">
-        <a class="mt-sidebar-link"
-           *ngFor="let link of links"
-           [routerLink]="link.route"
-           routerLinkActive="active"
-           [routerLinkActiveOptions]="{ exact: link.strict }">
-            {{link.name}}
-        </a>
+        <ng-container *ngFor="let link of links">
+            <a class="mt-sidebar-link"
+               *ngIf="link.route"
+               [routerLink]="link.route"
+               routerLinkActive="active"
+               [routerLinkActiveOptions]="{ exact: link.strict }">
+                {{link.name}}
+            </a>
+            <a class="mt-sidebar-link"
+               *ngIf="!link.route && link.url"
+               [href]="link.url">
+                {{link.name}}
+            </a>
+        </ng-container>
     </div>
 </div>

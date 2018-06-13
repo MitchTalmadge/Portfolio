@@ -1,4 +1,4 @@
-export const certifications: [{title: string, images: string[]}] = [
+export const certifications: {title: string, images: string[]}[] = [
     {
         title: "MTA – Software Development Fundamentals (C#)",
         images: [

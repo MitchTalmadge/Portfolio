@@ -1,4 +1,4 @@
-export const awards: [{title: string, images: string[]}] = [
+export const awards: {title: string, images: string[]}[] = [
     {
         title: "Sterling Scholar Winner – Computer Technology",
         images: [

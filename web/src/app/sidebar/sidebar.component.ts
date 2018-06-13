@@ -11,7 +11,7 @@ export class MTSidebarComponent implements OnInit {
     /**
      * The links to display in the sidebar.
      */
-    readonly links: [{name: string, route: string, strict: boolean}] = [
+    readonly links: { name: string, url?: string, route?: string, strict?: boolean }[] = [
         {
             name: 'Home',
             route: '/',
@@ -41,6 +41,10 @@ export class MTSidebarComponent implements OnInit {
             name: 'Projects',
             route: '/projects',
             strict: false
+        },
+        {
+            name: 'Articles',
+            url: 'https://medium.com/mitchtalmadge'
         },
         {
             name: 'Contact',

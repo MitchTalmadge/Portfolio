@@ -3,7 +3,7 @@
  * The description is extracted from the xml file,
  * using the title here as the tag (in lowercase).
  */
-const skills: [{ title: string, image: string, description?: string }] = [
+const skills: { title: string, image: string, description?: string }[] = [
     {
         title: "Java",
         image: require("./images/Java.svg")
