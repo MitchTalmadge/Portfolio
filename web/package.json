@@ -1,12 +1,13 @@
 {
-  "name": "Portfolio",
+  "name": "portfolio",
   "description": "The online portfolio of Mitch Talmadge",
   "repository": "https://github.com/MitchTalmadge/Portfolio",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --config webpack/webpack.dev.config.js --progress",
-    "build": "webpack --config webpack/webpack.production.config.js --progress"
+    "build": "webpack --config webpack/webpack.production.config.js --progress",
+    "analyze": "webpack --config webpack/webpack.production.analyze.config.js --progress"
   },
   "license": "UNLICENSED",
   "dependencies": {
@@ -68,7 +69,7 @@
     "uglify-js": "^3.4.9",
     "url-loader": "^1.1.2",
     "webpack": "^4.29.0",
-    "webpack-bundle-analyser": "^1.4.0",
+    "webpack-bundle-analyzer": "^3.0.3",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14",
     "webpack-merge": "^4.2.1",

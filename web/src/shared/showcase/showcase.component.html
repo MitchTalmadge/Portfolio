@@ -1,3 +1,21 @@
+<!--
+  ~ Mitch Talmadge's Web Portfolio
+  ~ Copyright (C) 2019 Mitch Talmadge
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
 <mt-glass-panel>
     <mt-glass-panel-header>
         <h2 class="text-center mb-0">{{title}}</h2>
@@ -8,7 +26,7 @@
                 <div *ngFor="let image of images; let i = index"
                      class="carousel-item"
                      [class.active]="currentImageIndex == i">
-                    <img [src]="image" class="d-block w-100"/>
+                    <img [src]="image" class="d-block w-100" alt=""/>
                 </div>
             </div>
             <a class="carousel-control-prev"

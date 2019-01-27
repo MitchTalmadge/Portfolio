@@ -1,3 +1,21 @@
+/*
+ * Mitch Talmadge's Web Portfolio
+ * Copyright (C) 2019 Mitch Talmadge
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
 const path = require('path');
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -35,12 +53,12 @@ const config = {
                 use: ["to-string-loader", "css-loader", "sass-loader"]
             },
             {
-                test: /\.css(\?v=[\d\.]+)?$/,
+                test: /\.css(\?v=[\d.]+)?$/,
                 use: ["style-loader", "css-loader"],
                 exclude: [/\.(component|directive)\.css$/]
             },
             {
-                test: /\.scss(\?v=[\d\.]+)?$/,
+                test: /\.scss(\?v=[\d.]+)?$/,
                 use: ["style-loader", "css-loader", "sass-loader"],
                 exclude: [/\.(component|directive)\.scss$/]
             },
@@ -87,6 +105,7 @@ const config = {
         new HtmlWebpackPlugin({
             template: path.join(__dirname, '../src/index.html.ejs'),
             filename: path.join(outputPath, 'index.html'),
+            favicon: path.join(__dirname, "../src/resources/images/favicon.ico"),
             inject: 'body',
             minify: {
                 minifyCSS: true,

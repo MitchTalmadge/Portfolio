@@ -1,36 +1,58 @@
+/*
+ * Mitch Talmadge's Web Portfolio
+ * Copyright (C) 2019 Mitch Talmadge
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
 import {NgModule} from "@angular/core";
 import {RouterModule, Routes} from "@angular/router";
 
 const routes: Routes = [
     {
-        path: '',
-        loadChildren: './features/home/home.module#MTHomeModule'
+        path: "",
+        loadChildren: "./features/home/home.module#HomeModule",
     },
     {
-        path: 'about',
-        loadChildren: './features/about/about.module#MTAboutModule'
+        path: "articles",
+        loadChildren: "./features/articles/articles.module#ArticlesModule",
     },
     {
-        path: 'skills',
-        loadChildren: './features/skills/skills.module#MTSkillsModule'
+        path: "biography",
+        loadChildren: "./features/biography/biography.module#BiographyModule",
     },
     {
-        path: 'certifications',
-        loadChildren: './features/certifications/certifications.module#MTCertificationsModule'
+        path: "skills",
+        loadChildren: "./features/skills/skills.module#MTSkillsModule",
     },
     {
-        path: 'awards',
-        loadChildren: './features/awards/awards.module#MTAwardsModule'
+        path: "certifications",
+        loadChildren: "./features/certifications/certifications.module#MTCertificationsModule",
     },
     {
-        path: 'contact',
-        loadChildren: './features/contact/contact.module#MTContactModule'
+        path: "awards",
+        loadChildren: "./features/awards/awards.module#MTAwardsModule",
     },
     {
-        path: '**',
-        redirectTo: '/',
-        pathMatch: 'full'
-    }
+        path: "contact",
+        loadChildren: "./features/contact/contact.module#MTContactModule",
+    },
+    {
+        path: "**",
+        redirectTo: "/",
+        pathMatch: "full",
+    },
 ];
 
 /**
