@@ -3,6 +3,8 @@ const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+config.mode = "development";
+
 config.module.rules.unshift(
     {
         test: /\.ts$/,
@@ -11,24 +13,16 @@ config.module.rules.unshift(
     }
 );
 
-config.plugins.push(
-    // HTML Webpack Plugin with dev set to true.
-    new HtmlWebpackPlugin({
-        template: path.join(__dirname, '../index.html.ejs'),
-        favicon: path.join(__dirname, '../resources/images/favicon.ico'),
-        filename: path.join(config.output.path, 'index.html'),
-        inject: 'body',
-        minify: {
-            minifyCSS: true,
-            minifyJS: true,
-            removeComments: true,
-            collapseWhitespace: true,
-            collapseInlineTagWhitespace: true
-        },
-        chunksSortMode: 'dependency',
-        dev: true
-    })
-);
+config.devServer = {
+    contentBase: config.output.path,
+    disableHostCheck: true,
+    historyApiFallback: true,
+    compress: true,
+    port: 9000,
+    proxy: {
+        '/api': 'http://localhost:8080'
+    }
+};
 
 config.devtool = 'source-map';
 

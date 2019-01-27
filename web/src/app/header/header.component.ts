@@ -1,5 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {NavigationEnd, Router} from "@angular/router";
+import {filter} from "rxjs/operators";
 import {Subscription} from "rxjs/Subscription";
 
 @Component({
@@ -20,10 +21,10 @@ export class MTHeaderComponent implements OnInit, OnDestroy {
      */
     readonly contents: { title: string, subtitle?: string, route: string, strict: boolean }[] = [
         {
-            title: 'Mitch Talmadge',
-            subtitle: '< Software Engineer />',
+            title: "Mitch Talmadge",
+            subtitle: "< Software Engineer />",
             route: '/',
-            strict: true
+            strict: true,
         },
         {
             title: 'About Mitch',
@@ -64,13 +65,15 @@ export class MTHeaderComponent implements OnInit, OnDestroy {
     ngOnInit() {
         // Listen to route changes to update the current contents of the header.
         this.routerSubscription = this.router.events
-            .filter(event => event instanceof NavigationEnd)
+            .pipe(
+                filter((event) => event instanceof NavigationEnd)
+            )
             .subscribe((event: NavigationEnd) => {
                 // Iterate over all header contents to find a matching route.
                 for (let contents of this.contents) {
                     // Strict routes must exactly match the url.
                     if (contents.strict) {
-                        if (event.urlAfterRedirects == contents.route) {
+                        if (event.urlAfterRedirects === contents.route) {
                             this.currentContents = contents;
                             break;
                         }

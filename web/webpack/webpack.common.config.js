@@ -1,5 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const outputPath = "../bin";
 
@@ -68,12 +71,6 @@ const config = {
         // This plugin removes all un-used locales from moment (a nearly 200kb reduction).
         new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /en/),
 
-        // Puts chunks in correct order.
-        new webpack.optimize.CommonsChunkPlugin({
-            name: ['main', 'vendor', 'polyfills'],
-            minChunks: Infinity
-        }),
-
         // Aliases for JS libraries.
         new webpack.ProvidePlugin({
             jQuery: 'jquery',
@@ -85,8 +82,44 @@ const config = {
             "window.tether": 'tether',
             "window.Tether": 'tether',
             Popper: 'popper.js'
-        })
+        }),
+
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, '../src/index.html.ejs'),
+            filename: path.join(outputPath, 'index.html'),
+            inject: 'body',
+            minify: {
+                minifyCSS: true,
+                minifyJS: true,
+                removeComments: true,
+                collapseWhitespace: true,
+                collapseInlineTagWhitespace: true
+            },
+            chunks: ['polyfills', 'vendor', 'main'],
+            chunksSortMode: 'manual'
+        }),
+
+        new CleanWebpackPlugin(['bin'], {root: path.join(__dirname, '../')}),
     ],
+
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                main: {
+                    name: "main",
+                    minChunks: Infinity
+                },
+                vendor: {
+                    name: "vendor",
+                    minChunks: Infinity
+                },
+                polyfills: {
+                    name: "polyfills",
+                    minChunks: Infinity
+                },
+            }
+        }
+    },
 
     resolve: {
         extensions: ['.ts', '.js', '.json', '.jsx'],
@@ -114,14 +147,6 @@ const config = {
         setImmediate: false,
         clearTimeout: true,
         setTimeout: true
-    },
-
-    devServer: {
-        contentBase: path.join(__dirname, outputPath),
-        disableHostCheck: true,
-        historyApiFallback: true,
-        compress: true,
-        port: 9000
     }
 };
 

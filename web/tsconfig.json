@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "baseUrl": "./src/scripts",
     "outDir": "./lib",
     "lib": [
       "dom",

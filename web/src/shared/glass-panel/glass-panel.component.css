@@ -1,5 +1,5 @@
 .mt-glass-panel-wrapper {
-    background: url('../../../resources/images/blue-background.jpg') fixed;
+    background: url('../../resources/images/blue-background.jpg') fixed;
     background-size: cover;
     border-radius: 10px;
     padding: 10px;

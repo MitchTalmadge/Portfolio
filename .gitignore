@@ -190,3 +190,5 @@ typings/
 
 /package-lock.json
 /server/target/
+
+application-development.properties
