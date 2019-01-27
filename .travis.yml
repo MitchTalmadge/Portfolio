@@ -3,7 +3,7 @@ jobs:
     - stage: test
       language: node_js
       node_js:
-        - "6"
+        - "10"
       cache:
         directories:
           - "web/node_modules"
@@ -38,7 +38,7 @@ jobs:
         - mvn clean
 
         - cd ../web # Build Web Project
-        - nvm install "6.11.4"
+        - nvm install "10.15.0"
         - npm install
         - npm run build
 
