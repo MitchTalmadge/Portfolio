@@ -21,7 +21,12 @@ import {Component, ViewEncapsulation} from "@angular/core";
 @Component({
     selector: "mt-app",
     templateUrl: "app.component.html",
-    styleUrls: ["app.component.scss"],
+    styleUrls: [
+        "app.component.scss",
+        "vendor/bootstrap.vendor.scss",
+        "vendor/fontawesome.vendor.scss",
+        "vendor/googlefonts.vendor.scss",
+    ],
     encapsulation: ViewEncapsulation.None,
 })
 export class MTAppComponent {

@@ -32,6 +32,10 @@
     text-align: center;
     box-sizing: border-box;
 
+    background-color: #85BAC7;
+    background-image: url("../images/blue-background.jpg");
+    background-size: cover;
+
     transition: opacity .8s ease-in-out;
     opacity: 0;
 

@@ -29,7 +29,6 @@ const config = {
 
     entry: {
         polyfills: path.join(__dirname, '../src/polyfills.ts'),
-        vendor: path.join(__dirname, '../src/vendors/vendors.ts'),
         main: path.join(__dirname, '../src/main.ts')
     },
 
@@ -45,22 +44,22 @@ const config = {
                 exclude: [/\.(component|directive)\.html$/]
             },
             {
-                test: /\.(component|directive)\.css$/,
+                test: /\.(component|directive|vendor)\.css$/,
                 use: ["to-string-loader", "css-loader"]
             },
             {
-                test: /\.(component|directive)\.scss$/,
+                test: /\.(component|directive|vendor)\.scss$/,
                 use: ["to-string-loader", "css-loader", "sass-loader"]
             },
             {
                 test: /\.css(\?v=[\d.]+)?$/,
                 use: ["style-loader", "css-loader"],
-                exclude: [/\.(component|directive)\.css$/]
+                exclude: [/\.(component|directive|vendor)\.css$/]
             },
             {
                 test: /\.scss(\?v=[\d.]+)?$/,
                 use: ["style-loader", "css-loader", "sass-loader"],
-                exclude: [/\.(component|directive)\.scss$/]
+                exclude: [/\.(component|directive|vendor)\.scss$/]
             },
             {
                 test: /\.xml$/,
@@ -113,28 +112,37 @@ const config = {
                 removeComments: true,
                 collapseWhitespace: true,
                 collapseInlineTagWhitespace: true
-            },
-            chunks: ['polyfills', 'vendor', 'main'],
-            chunksSortMode: 'manual'
+            }
         }),
 
         new CleanWebpackPlugin(['bin'], {root: path.join(__dirname, '../')}),
     ],
 
     optimization: {
+        runtimeChunk: 'single',
         splitChunks: {
+            chunks: 'all',
+            maxInitialRequests: Infinity,
+            minSize: 0,
             cacheGroups: {
                 main: {
                     name: "main",
                     minChunks: Infinity
                 },
-                vendor: {
-                    name: "vendor",
-                    minChunks: Infinity
-                },
                 polyfills: {
                     name: "polyfills",
                     minChunks: Infinity
+                },
+                vendor: {
+                    // Split vendor bundle into chunks for each package.
+                    test: /[\\/]node_modules[\\/]/,
+                    name(module) {
+                        // Get package name.
+                        const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
+
+                        // Remove @ symbols to make package names url-safe.
+                        return `npm.${packageName.replace('@', '')}`;
+                    },
                 },
             }
         }
