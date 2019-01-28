@@ -39,6 +39,18 @@ h3 {
   color: #666;
 }
 
+@include media-breakpoint-only(md) {
+  #mt-app-container {
+    padding-left: 180px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #mt-app-container {
+    padding-left: 50px;
+  }
+}
+
 /* Make default container wider on XL screens */
 @include media-breakpoint-only(xl) {
   .mt-app .container {

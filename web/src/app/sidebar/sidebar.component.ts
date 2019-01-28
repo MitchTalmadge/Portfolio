@@ -21,7 +21,7 @@ import {Component, OnInit} from "@angular/core";
 @Component({
     selector: "mt-sidebar",
     templateUrl: "sidebar.component.html",
-    styleUrls: ["sidebar.component.css"],
+    styleUrls: ["sidebar.component.scss"],
 })
 
 export class MTSidebarComponent implements OnInit {
@@ -29,49 +29,58 @@ export class MTSidebarComponent implements OnInit {
     /**
      * The links to display in the sidebar.
      */
-    public readonly links: Array<{ name: string, url?: string, route?: string, strict?: boolean }> = [
+    public readonly links: Array<{ name: string, icon: string, url?: string, route?: string, strict?: boolean }> = [
         {
             name: "Home",
+            icon: "fas fa-home",
             route: "/",
             strict: true,
         },
         {
             name: "Biography",
+            icon: "fas fa-user-circle",
             route: "/biography",
             strict: true,
         },
         {
-            name: "Articles",
-            route: "/articles",
+            name: "Skills",
+            icon: "fas fa-toolbox",
+            route: "/skills",
             strict: true,
         },
         {
             name: "Awards",
+            icon: "fas fa-trophy",
             route: "/awards",
             strict: true,
         },
         {
-            name: "Certifications",
+            name: "Certs",
+            icon: "fas fa-award",
             route: "/certifications",
             strict: true,
         },
-        {
+        /*{
             name: "Projects",
+            icon: "fas fa-code",
             route: "/projects",
             strict: false,
         },
         {
             name: "Service",
+            icon: "fas fa-hands-helping",
             route: "/service",
             strict: false,
-        },
+        },*/
         {
-            name: "Technical Skills",
-            route: "/skills",
+            name: "Articles",
+            icon: "fas fa-align-left",
+            route: "/articles",
             strict: true,
         },
         {
             name: "Contact",
+            icon: "fas fa-envelope",
             route: "/contact",
             strict: true,
         },

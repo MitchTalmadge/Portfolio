@@ -18,22 +18,31 @@
 
 <div id="mt-sidebar">
     <a routerLink="/">
-        <img id="mt-sidebar-logo" src="../../resources/images/logo.svg" draggable="false" alt=""/>
+        <img class="p-1 p-md-4 img-fluid" id="mt-sidebar-logo" src="../../resources/images/logo.svg" draggable="false" alt=""/>
     </a>
 
-    <div id="mt-sidebar-links">
+    <div id="mt-sidebar-links" class="mt-3">
         <ng-container *ngFor="let link of links">
-            <a class="mt-sidebar-link"
+            <!-- Router Link -->
+            <a class="mt-sidebar-link pr-0 pr-md-3 mb-2"
                *ngIf="link.route"
                [routerLink]="link.route"
                routerLinkActive="active"
                [routerLinkActiveOptions]="{ exact: link.strict }">
-                {{link.name}}
+                <span class="d-none d-md-inline mr-3">{{link.name}}</span>
+                <span class="d-none d-md-block float-md-right text-center" style="width: 20px"><i class="{{link.icon}}"></i></span>
+
+                <span class="d-block d-md-none text-center"><i class="{{link.icon}}"></i></span>
             </a>
-            <a class="mt-sidebar-link"
+
+            <!-- Actual Link -->
+            <a class="mt-sidebar-link pr-0 pr-md-3 mb-2"
                *ngIf="!link.route && link.url"
                [href]="link.url">
-                {{link.name}}
+                <span class="d-none d-md-inline">{{link.name}}</span>
+                <span class="d-none d-md-block float-md-right text-center" style="width: 20px"><i class="{{link.icon}}"></i></span>
+
+                <span class="d-block d-md-none text-center"><i class="{{link.icon}}"></i></span>
             </a>
         </ng-container>
     </div>

@@ -16,6 +16,8 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+@import "~bootstrap/scss/bootstrap-grid";
+
 #mt-sidebar {
     width: 225px;
     height: 100vh;
@@ -28,17 +30,21 @@
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
 }
 
-#mt-sidebar-logo {
-    width: 100%;
-    padding: 40px;
+@include media-breakpoint-only(md) {
+    #mt-sidebar {
+        width: 180px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #mt-sidebar {
+        width: 50px;
+    }
 }
 
 #mt-sidebar-links .mt-sidebar-link {
     width: 100%;
     height: 40px;
-
-    padding-right: 20px;
-    margin-bottom: 10px;
 
     display: block;
 
