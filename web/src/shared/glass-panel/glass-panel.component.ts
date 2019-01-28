@@ -16,7 +16,9 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {Component, Directive, OnInit} from "@angular/core";
+import {AfterViewInit, ChangeDetectorRef, Component, ContentChild, OnInit, ViewChild} from "@angular/core";
+import {GlassPanelBodyDirective} from "./glass-panel-body.directive";
+import {GlassPanelHeaderDirective} from "./glass-panel-header.directive";
 
 @Component({
     selector: "glass-panel",
@@ -24,11 +26,23 @@ import {Component, Directive, OnInit} from "@angular/core";
     styleUrls: ["glass-panel.component.css"],
 })
 
-export class GlassPanelComponent implements OnInit {
+export class GlassPanelComponent implements OnInit, AfterViewInit {
+    @ContentChild(GlassPanelHeaderDirective) public panelHeader: GlassPanelHeaderDirective;
+    public showHeader: boolean;
 
-    constructor() {
+    @ContentChild(GlassPanelBodyDirective) public panelBody: GlassPanelBodyDirective;
+    public showBody: boolean;
+
+    constructor(private cdRef: ChangeDetectorRef) {
     }
 
     public ngOnInit() {
     }
+
+    public ngAfterViewInit(): void {
+        this.showHeader = this.panelHeader != null;
+        this.showBody = this.panelBody != null;
+        this.cdRef.detectChanges();
+    }
+
 }

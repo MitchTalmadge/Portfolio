@@ -21,28 +21,28 @@
     <div class="row pb-5">
 
         <!-- LinkedIn -->
-        <div class="col-3 col-lg-2 d-flex justify-content-center">
+        <div class="col-3 col-xl-2 d-flex justify-content-center">
             <a class="mt-social-link" href="https://www.linkedin.com/in/MitchTalmadge" target="_blank">
                 <img src="images/LinkedIn.svg" alt="Linked In"/>
             </a>
         </div>
 
         <!-- Twitter -->
-        <div class="col-3 col-lg-2 d-flex justify-content-center">
+        <div class="col-3 col-xl-2 d-flex justify-content-center">
             <a class="mt-social-link" href="https://twitter.com/MitchTalmadge" target="_blank">
                 <img src="images/Twitter.svg" alt="Twitter"/>
             </a>
         </div>
 
         <!-- Github -->
-        <div class="col-3 col-lg-2 d-flex justify-content-center">
+        <div class="col-3 col-xl-2 d-flex justify-content-center">
             <a class="mt-social-link" href="https://github.com/MitchTalmadge" target="_blank">
                 <img src="images/Github.svg" alt="Git Hub"/>
             </a>
         </div>
 
         <!-- Stack Overflow -->
-        <div class="col-3 col-lg-2 d-flex justify-content-center">
+        <div class="col-3 col-xl-2 d-flex justify-content-center">
             <a class="mt-social-link" href="http://stackoverflow.com/users/2364405/mitch-talmadge" target="_blank">
                 <img src="images/StackOverflow.svg" alt="Stack Overflow"/>
             </a>
@@ -54,13 +54,13 @@
     <div class="row pb-3">
 
         <!-- Contact Form -->
-        <div class="col-12 col-lg-8">
+        <div class="col-12 col-xl-8 mb-3 mb-xl-0">
             <contact-form>
             </contact-form>
         </div>
 
         <!-- Resume -->
-        <div class="col-12 col-lg-4">
+        <div class="d-none d-xl-block col-xl-4">
             <glass-panel>
                 <glass-panel-header>
                     <h2 class="text-center">Résumé</h2>
@@ -69,6 +69,14 @@
                 <glass-panel-body>
                     <img src="images/resume.png" alt="" style="width: 100%"/>
                 </glass-panel-body>
+            </glass-panel>
+        </div>
+        <div class="d-xl-none col-12">
+            <glass-panel>
+                <glass-panel-header>
+                    <h2 class="text-center">Résumé</h2>
+                    <p class="text-center mb-0 lead"><a class="badge badge-secondary" [href]="resume" target="_blank"><i class="fas fa-external-link-alt"></i> Grab a copy.</a></p>
+                </glass-panel-header>
             </glass-panel>
         </div>
 

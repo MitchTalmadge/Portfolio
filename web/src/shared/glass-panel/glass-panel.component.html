@@ -17,12 +17,12 @@
   -->
 
 <!--suppress HtmlUnknownAttribute -->
-<div class="glass-panel-wrapper">
-    <div class="glass-panel-header">
+<div class="glass-panel-wrapper p-2">
+    <div class="glass-panel-header p-2" [ngClass]="{'mb-2': showBody}" [hidden]="!showHeader">
         <ng-content select="glass-panel-header">
         </ng-content>
     </div>
-    <div class="glass-panel-body">
+    <div class="glass-panel-body p-2" [hidden]="!showBody">
         <ng-content select="glass-panel-body">
         </ng-content>
     </div>
