@@ -18,20 +18,18 @@
 
 import {NgModule} from "@angular/core";
 
-import {SharedModule} from "../../shared/shared.module";
-import {HomeComponent} from "./home.component";
-import {HomeRoutesModule} from "./home.routes";
+import {SharedModule} from "../../../shared/shared.module";
+import {MTCertificationsComponent} from "./certifications.component";
+import {MTCertificationsRoutesModule} from "./certifications.routes";
 
 @NgModule({
     imports: [
         SharedModule,
-        HomeRoutesModule,
-    ],
-    declarations: [
-        HomeComponent,
+        MTCertificationsRoutesModule,
     ],
     exports: [],
+    declarations: [MTCertificationsComponent],
     providers: [],
 })
-export class HomeModule {
+export class MTCertificationsModule {
 }

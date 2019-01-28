@@ -22,31 +22,31 @@ import {RouterModule, Routes} from "@angular/router";
 const routes: Routes = [
     {
         path: "",
-        loadChildren: "./features/home/home.module#HomeModule",
+        loadChildren: "./app/sections/home/home.module#HomeModule",
     },
     {
         path: "articles",
-        loadChildren: "./features/articles/articles.module#ArticlesModule",
+        loadChildren: "./app/sections/articles/articles.module#ArticlesModule",
     },
     {
         path: "biography",
-        loadChildren: "./features/biography/biography.module#BiographyModule",
+        loadChildren: "./app/sections/biography/biography.module#BiographyModule",
     },
     {
         path: "skills",
-        loadChildren: "./features/skills/skills.module#MTSkillsModule",
+        loadChildren: "./app/sections/skills/skills.module#MTSkillsModule",
     },
     {
         path: "certifications",
-        loadChildren: "./features/certifications/certifications.module#MTCertificationsModule",
+        loadChildren: "./app/sections/certifications/certifications.module#MTCertificationsModule",
     },
     {
         path: "awards",
-        loadChildren: "./features/awards/awards.module#MTAwardsModule",
+        loadChildren: "./app/sections/awards/awards.module#MTAwardsModule",
     },
     {
         path: "contact",
-        loadChildren: "./features/contact/contact.module#MTContactModule",
+        loadChildren: "./app/sections/contact/contact.module#MTContactModule",
     },
     {
         path: "**",

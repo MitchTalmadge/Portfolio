@@ -21,6 +21,7 @@
         <div class="col-12" *ngFor="let skill of skills">
             <skill [title]="skill.title"
                    [src]="skill.image">
+                <!--suppress HtmlUnknownAttribute -->
                 <div [innerHtml]="skill.description"></div>
             </skill>
         </div>

@@ -18,21 +18,23 @@
 
 import {NgModule} from "@angular/core";
 
-import {SharedModule} from "../../shared/shared.module";
-import {ArticlesComponent} from "./articles.component";
-import {ArticlesRoutesModule} from "./articles.routes";
+import {SharedModule} from "../../../shared/shared.module";
+import {MTContactFormComponent} from "./contact-form/contact-form.component";
+import {MTContactComponent} from "./contact.component";
+import {MTContactRoutesModule} from "./contact.routes";
 
 @NgModule({
     imports: [
         SharedModule,
-        ArticlesRoutesModule,
+        MTContactRoutesModule,
     ],
     exports: [],
     declarations: [
-        ArticlesComponent,
+        MTContactComponent,
+        MTContactFormComponent,
     ],
     providers: [],
 })
-export class ArticlesModule {
+export class MTContactModule {
 
 }

@@ -18,20 +18,21 @@
 
 import {NgModule} from "@angular/core";
 
-import {SharedModule} from "../../shared/shared.module";
-import {BiographyComponent} from "./biography.component";
-import {BiographyRoutesModule} from "./biography.routes";
+import {SharedModule} from "../../../shared/shared.module";
+import {ArticlesComponent} from "./articles.component";
+import {ArticlesRoutesModule} from "./articles.routes";
 
 @NgModule({
     imports: [
         SharedModule,
-        BiographyRoutesModule,
-    ],
-    declarations: [
-        BiographyComponent,
+        ArticlesRoutesModule,
     ],
     exports: [],
+    declarations: [
+        ArticlesComponent,
+    ],
     providers: [],
 })
-export class BiographyModule {
+export class ArticlesModule {
+
 }

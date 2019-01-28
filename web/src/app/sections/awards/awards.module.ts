@@ -18,7 +18,7 @@
 
 import {NgModule} from "@angular/core";
 
-import {SharedModule} from "../../shared/shared.module";
+import {SharedModule} from "../../../shared/shared.module";
 import {MTAwardsComponent} from "./awards.component";
 import {MTAwardsRoutesModule} from "./awards.routes";
 
