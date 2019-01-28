@@ -24,7 +24,10 @@ import {Component, OnInit} from "@angular/core";
     styleUrls: ["contact.component.css"],
 })
 
-export class MTContactComponent implements OnInit {
+export class ContactComponent implements OnInit {
+
+    public resume = require("./static/Mitch-Talmadge-Resume.pdf");
+
     constructor() {
     }
 

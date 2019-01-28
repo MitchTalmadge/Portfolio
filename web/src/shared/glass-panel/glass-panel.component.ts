@@ -16,33 +16,19 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {Component, Directive, Input, OnInit} from "@angular/core";
+import {Component, Directive, OnInit} from "@angular/core";
 
 @Component({
-    selector: "mt-glass-panel",
+    selector: "glass-panel",
     templateUrl: "glass-panel.component.html",
     styleUrls: ["glass-panel.component.css"],
 })
 
-export class MTGlassPanelComponent implements OnInit {
+export class GlassPanelComponent implements OnInit {
 
     constructor() {
     }
 
     public ngOnInit() {
     }
-}
-
-@Directive({
-    selector: "mt-glass-panel-header",
-})
-export class MTGlassPanelHeaderDirective {
-
-}
-
-@Directive({
-    selector: "mt-glass-panel-body",
-})
-export class MTGlassPanelBodyDirective {
-
 }

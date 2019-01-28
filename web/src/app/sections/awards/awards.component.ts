@@ -17,7 +17,7 @@
  */
 
 import {Component, OnInit} from "@angular/core";
-import {awards} from "./static/award-definitions";
+import {awards} from "./award-definitions";
 
 @Component({
     selector: "mt-certifications",

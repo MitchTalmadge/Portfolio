@@ -16,11 +16,11 @@
   ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
-<mt-glass-panel>
-    <mt-glass-panel-header>
+<glass-panel>
+    <glass-panel-header>
         <h2 class="text-center mb-0">{{title}}</h2>
-    </mt-glass-panel-header>
-    <mt-glass-panel-body>
+    </glass-panel-header>
+    <glass-panel-body>
         <div class="carousel">
             <div class="carousel-inner">
                 <div *ngFor="let image of images; let i = index"
@@ -40,5 +40,5 @@
                 <span class="fa fa-2x fa-angle-right"></span>
             </a>
         </div>
-    </mt-glass-panel-body>
-</mt-glass-panel>
+    </glass-panel-body>
+</glass-panel>

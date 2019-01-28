@@ -16,23 +16,11 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {NgModule} from "@angular/core";
+import {Directive} from "@angular/core";
 
-import {CommonModule} from "@angular/common";
-import {FormsModule} from "@angular/forms";
-import {GlassPanelModule} from "../glass-panel/glass-panel.module";
-import {MTShowcaseComponent} from "./showcase.component";
-
-@NgModule({
-    imports: [
-        CommonModule,
-        FormsModule,
-
-        GlassPanelModule,
-    ],
-    exports: [MTShowcaseComponent],
-    declarations: [MTShowcaseComponent],
-    providers: [],
+@Directive({
+    selector: "glass-panel-body",
 })
-export class MTShowcaseModule {
+export class GlassPanelBodyDirective {
+
 }

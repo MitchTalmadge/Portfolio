@@ -19,23 +19,25 @@
 import {NgModule} from "@angular/core";
 
 import {CommonModule} from "@angular/common";
-import {MTGlassPanelBodyDirective, MTGlassPanelComponent, MTGlassPanelHeaderDirective} from "./glass-panel.component";
+import {GlassPanelBodyDirective} from "./glass-panel-body.directive";
+import {GlassPanelHeaderDirective} from "./glass-panel-header.directive";
+import {GlassPanelComponent} from "./glass-panel.component";
 
 @NgModule({
     imports: [
         CommonModule,
     ],
     exports: [
-        MTGlassPanelComponent,
-        MTGlassPanelHeaderDirective,
-        MTGlassPanelBodyDirective,
+        GlassPanelComponent,
+        GlassPanelHeaderDirective,
+        GlassPanelBodyDirective,
     ],
     declarations: [
-        MTGlassPanelComponent,
-        MTGlassPanelHeaderDirective,
-        MTGlassPanelBodyDirective,
+        GlassPanelComponent,
+        GlassPanelHeaderDirective,
+        GlassPanelBodyDirective,
     ],
     providers: [],
 })
-export class MTGlassPanelModule {
+export class GlassPanelModule {
 }

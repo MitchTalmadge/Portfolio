@@ -16,14 +16,14 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-.mt-glass-panel-wrapper {
+.glass-panel-wrapper {
     background: url('../../resources/images/blue-background.jpg') fixed;
     background-size: cover;
     border-radius: 10px;
     padding: 10px;
 }
 
-.mt-glass-panel-header, .mt-glass-panel-body {
+.glass-panel-header, .glass-panel-body {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 5px;
     padding: 10px;
@@ -31,6 +31,6 @@
 
 /* Header */
 
-.mt-glass-panel-header {
+.glass-panel-header {
     margin-bottom: 20px;
 }

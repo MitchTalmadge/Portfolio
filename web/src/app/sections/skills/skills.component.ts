@@ -17,7 +17,7 @@
  */
 
 import {Component, OnInit} from "@angular/core";
-import {getSkills} from "./static/skill-definitions";
+import {getSkills} from "./skill-definitions";
 
 @Component({
     selector: "mt-skills",

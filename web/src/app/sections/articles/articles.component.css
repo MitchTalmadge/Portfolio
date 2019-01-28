@@ -16,10 +16,10 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-mt-glass-panel-header h2 {
+glass-panel-header h2 {
     font-size: 1.75rem;
 }
 
-mt-glass-panel-header p {
+glass-panel-header p {
     font-size: 1.25rem;
 }

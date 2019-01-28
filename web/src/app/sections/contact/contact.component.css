@@ -16,10 +16,10 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-mt-glass-panel-header h2 {
-    font-size: 1.75rem;
+.mt-social-link {
+    transition: margin-top 300ms ease-in-out;
 }
 
-mt-glass-panel-header p {
-    font-size: 1.25rem;
+.mt-social-link:hover {
+    margin-top: -8px;
 }

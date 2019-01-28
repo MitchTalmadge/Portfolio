@@ -20,7 +20,7 @@ import {CommonModule} from "@angular/common";
 import {NgModule} from "@angular/core";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
-import {MTGlassPanelModule} from "./glass-panel/glass-panel.module";
+import {GlassPanelModule} from "./glass-panel/glass-panel.module";
 import {MTShowcaseModule} from "./showcase/showcase.module";
 
 /**
@@ -34,7 +34,7 @@ import {MTShowcaseModule} from "./showcase/showcase.module";
         RouterModule,
 
         // Components
-        MTGlassPanelModule,
+        GlassPanelModule,
         MTShowcaseModule,
     ],
     declarations: [],
@@ -45,7 +45,7 @@ import {MTShowcaseModule} from "./showcase/showcase.module";
         RouterModule,
 
         // Components
-        MTGlassPanelModule,
+        GlassPanelModule,
         MTShowcaseModule,
     ],
     providers: [],

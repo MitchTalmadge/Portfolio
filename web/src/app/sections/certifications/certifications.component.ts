@@ -17,7 +17,7 @@
  */
 
 import {Component, OnInit} from "@angular/core";
-import {certifications} from "./static/certification-definitions";
+import {certifications} from "./certification-definitions";
 
 @Component({
     selector: "mt-certifications",

@@ -66,11 +66,11 @@ const config = {
                 use: "xml-loader"
             },
             {
-                test: /\.yaml/,
+                test: /\.yaml$/,
                 use: ["json-loader", "yaml-loader"]
             },
             {
-                test: /manifest\.json/,
+                test: /manifest\.json$/,
                 use: "file-loader?name=./resources/json/[hash].[ext]"
             },
             {
@@ -80,6 +80,11 @@ const config = {
             {
                 test: /\.(ttf|eot|woff|woff2)(\?v=[\d.]+)?$/,
                 use: 'file-loader?name=./resources/fonts/[hash].[ext]'
+            },
+            {
+                test: /\.[a-zA-Z0-9]+$/,
+                use: 'file-loader?name=./resources/static/[name].[ext]',
+                exclude: [new RegExp('^((?!\\'+path.sep+'static\\'+path.sep+').)+$')]
             }
         ]
     },
