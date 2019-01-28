@@ -17,7 +17,6 @@
  */
 
 import {Component, OnInit} from "@angular/core";
-import {getSkills} from "./skill-definitions";
 
 @Component({
     selector: "mt-skills",
@@ -27,7 +26,16 @@ import {getSkills} from "./skill-definitions";
 
 export class MTSkillsComponent implements OnInit {
 
-    public skills = getSkills();
+    public skillImages: {[skillName: string]: string} = {
+        "java": require("./images/Java.svg"),
+        "android": require("./images/Android.svg"),
+        "linux": require("./images/Linux.svg"),
+        "php": require("./images/MySQL.svg"),
+        "mysql": require("./images/MySQL.svg"),
+        "wordpress": require("./images/WordPress.svg"),
+        "autodesk": require("./images/Autodesk.svg"),
+        "adobe": require("./images/Adobe.svg"),
+    };
 
     constructor() {
 
@@ -35,4 +43,5 @@ export class MTSkillsComponent implements OnInit {
 
     public ngOnInit() {
     }
+
 }
