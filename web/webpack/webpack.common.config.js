@@ -112,7 +112,7 @@ const config = {
                 removeComments: true,
                 collapseWhitespace: true,
                 collapseInlineTagWhitespace: true
-            }
+            },
         }),
 
         new CleanWebpackPlugin(['bin'], {root: path.join(__dirname, '../')}),
@@ -125,14 +125,6 @@ const config = {
             maxInitialRequests: Infinity,
             minSize: 0,
             cacheGroups: {
-                main: {
-                    name: "main",
-                    minChunks: Infinity
-                },
-                polyfills: {
-                    name: "polyfills",
-                    minChunks: Infinity
-                },
                 vendor: {
                     // Split vendor bundle into chunks for each package.
                     test: /[\\/]node_modules[\\/]/,
