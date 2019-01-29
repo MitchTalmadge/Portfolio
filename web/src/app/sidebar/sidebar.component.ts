@@ -65,13 +65,13 @@ export class MTSidebarComponent implements OnInit {
             icon: "fas fa-code",
             route: "/projects",
             strict: false,
-        },
+        },*/
         {
             name: "Service",
             icon: "fas fa-hands-helping",
             route: "/service",
             strict: false,
-        },*/
+        },
         {
             name: "Articles",
             icon: "fas fa-align-left",

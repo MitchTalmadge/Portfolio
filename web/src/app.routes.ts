@@ -45,6 +45,10 @@ const routes: Routes = [
         loadChildren: "./app/sections/awards/awards.module#MTAwardsModule",
     },
     {
+        path: "service",
+        loadChildren: "./app/sections/service/service.module#ServiceModule",
+    },
+    {
         path: "contact",
         loadChildren: "./app/sections/contact/contact.module#MTContactModule",
     },
