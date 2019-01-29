@@ -18,9 +18,57 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-12 col-lg-6 col-xl-4 mb-4" *ngFor="let award of awards">
-            <mt-showcase [title]="award.title"
-                         [images]="award.images">
+        <div class="col-12">
+            <h2>High School</h2>
+            <hr/>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'Sterling Scholar Winner – Computer Technology'"
+                         [images]="awardImages['sterling-1']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'Sterling Scholar Finalist – Computer Technology'"
+                         [images]="awardImages['sterling-2']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'Sterling Scholar Finalist – Skilled & Technical Sciences'"
+                         [images]="awardImages['sterling-3']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'CUSEF – 1st Place – Computer Science'"
+                         [images]="awardImages['cusef-1']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'CUSEF – Intel Computer Science Award'"
+                         [images]="awardImages['cusef-2']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'CUSEF – Dean’s Awards (BYU School of Education)'"
+                         [images]="awardImages['cusef-3']">
+            </mt-showcase>
+        </div>
+        <div class="col-12">
+            <h2>Middle School</h2>
+            <hr/>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'Robotic and Computer Programming'"
+                         [images]="awardImages['middle-1']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'Stage Crew Support'"
+                         [images]="awardImages['middle-2']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'Citizenship Role Model'"
+                         [images]="awardImages['middle-3']">
             </mt-showcase>
         </div>
     </div>
