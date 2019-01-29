@@ -47,15 +47,25 @@
 
 #mt-header h1 {
     color: #666;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 #mt-header p {
     color: #888;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-only(lg) {
+  #mt-header h1 {
+    font-size: 4vw;
+  }
+
+  #mt-header p {
+    font-size: 2vw;
+  }
+}
+
+@include media-breakpoint-only(md) {
   #mt-header h1 {
     font-size: 5vw;
   }
@@ -66,6 +76,15 @@
 }
 
 @include media-breakpoint-down(sm) {
+  #mt-header {
+    padding: 20px 0;
+  }
+
+  #mt-header-glass {
+    padding: 10px;
+    border-radius: 0;
+  }
+
   #mt-header h1 {
     font-size: 8vw;
   }
