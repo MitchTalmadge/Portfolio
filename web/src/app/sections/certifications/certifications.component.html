@@ -18,9 +18,59 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-12 col-lg-6 col-xl-4 mb-4" *ngFor="let certification of certifications">
-            <mt-showcase [title]="certification.title"
-                         [images]="certification.images">
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'MTA – Software Development Fundamentals'"
+                         [images]="certificationImages['mta-software']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'MTA – Security Fundamentals'"
+                         [images]="certificationImages['mta-security']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'MTA – HTML5 App Development'"
+                         [images]="certificationImages['mta-html5']">
+            </mt-showcase>
+        </div>
+
+        <div class="col-12">
+            <h2>High School CTE</h2>
+            <p class="lead">
+                My goal throughout high school was to take as many vocational classes as I could to build
+                up my skills. Many of my friends spent all their time miserably slaving away at AP classes so that
+                they could graduate faster. I decided to take classes that would actually have a lasting impact on my life.
+            </p>
+            <hr/>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'CTE – Computer Programming'"
+                         [images]="certificationImages['cte-programming']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'CTE – Foundations of Technology'"
+                         [images]="certificationImages['cte-tech']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'CTE – Basic Electronics'"
+                         [images]="certificationImages['cte-electronics']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'CTE – Woodworking'"
+                         [images]="certificationImages['cte-woodworking']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'CTE – 3D Graphics'"
+                         [images]="certificationImages['cte-3d']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'CTE – Automotive Service'"
+                         [images]="certificationImages['cte-auto']">
             </mt-showcase>
         </div>
     </div>

@@ -25,16 +25,34 @@ import {Component, OnInit} from "@angular/core";
 
 export class MTAwardsComponent implements OnInit {
 
-    public awardImages: { [id: string]: [string] } = {
-        "sterling-1": [require("./images/Award_SterlingScholar_Winner.jpg")],
-        "sterling-2": [require("./images/Award_SterlingScholar_ComputerTech.jpg")],
-        "sterling-3": [require("./images/Award_SterlingScholar_SkilledAndTech.jpg")],
-        "cusef-1": [require("./images/CUSEF1.jpg")],
-        "cusef-2": [require("./images/CUSEF2.jpg")],
-        "cusef-3": [require("./images/CUSEF3.jpg")],
-        "middle-1": [require("./images/Award_Elkridge_Programming.jpg")],
-        "middle-2": [require("./images/Award_Elkridge_StageCrew.jpg")],
-        "middle-3": [require("./images/Award_Elkridge_Citizenship.jpg")],
+    public awardImages: { [id: string]: string[] } = {
+        "sterling-1": [
+            require("./images/Award_SterlingScholar_Winner.jpg")
+        ],
+        "sterling-2": [
+            require("./images/Award_SterlingScholar_ComputerTech.jpg")
+        ],
+        "sterling-3": [
+            require("./images/Award_SterlingScholar_SkilledAndTech.jpg")
+        ],
+        "cusef-1": [
+            require("./images/CUSEF1.jpg")
+        ],
+        "cusef-2": [
+            require("./images/CUSEF2.jpg")
+        ],
+        "cusef-3": [
+            require("./images/CUSEF3.jpg")
+        ],
+        "middle-1": [
+            require("./images/Award_Elkridge_Programming.jpg")
+        ],
+        "middle-2": [
+            require("./images/Award_Elkridge_StageCrew.jpg")
+        ],
+        "middle-3": [
+            require("./images/Award_Elkridge_Citizenship.jpg")
+        ],
     };
 
     constructor() {
