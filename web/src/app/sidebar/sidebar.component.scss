@@ -18,6 +18,8 @@
 
 @import "~bootstrap/scss/bootstrap-grid";
 
+/* Container */
+
 #mt-sidebar {
     width: 225px;
     height: 100vh;
@@ -27,8 +29,12 @@
     position: fixed;
     z-index: 1;
 
+    overflow: auto;
+
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
 }
+
+/* Container Responsiveness */
 
 @include media-breakpoint-down(lg) {
     #mt-sidebar {
@@ -41,6 +47,14 @@
         width: 50px;
     }
 }
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Links */
 
 #mt-sidebar-links .mt-sidebar-link {
     width: 100%;
