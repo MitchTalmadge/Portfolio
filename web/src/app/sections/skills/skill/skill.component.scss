@@ -16,7 +16,9 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-/* All Cards */
+@import "~bootstrap/scss/bootstrap-grid";
+
+/* Both Cards */
 
 .card {
     border: none;
@@ -31,12 +33,28 @@
 }
 
 .mt-skill-main-card > .card-body {
-    padding-left: 140px;
     line-height: 2rem;
 }
 
 .mt-skill-main-card > .card-body > .card-title {
     font-weight: normal;
+}
+
+@include  media-breakpoint-up(md) {
+    .mt-skill-main-card > .card-body {
+        padding-left: 140px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .mt-skill-main-card > .card-body {
+        padding-top: 60px;
+    }
+
+    .mt-skill-main-card {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 }
 
 /* Icon Card */
@@ -45,4 +63,25 @@
     position: absolute;
     top: -30px;
     left: -30px;
+}
+
+.mt-skill-icon-card img {
+    width: 100px;
+    height: 100px;
+}
+
+@include media-breakpoint-down(sm) {
+    .mt-skill-icon-card {
+        top: -10px;
+        left: -10px;
+    }
+
+    .mt-skill-icon-card .card-body {
+        padding: 10px;
+    }
+
+    .mt-skill-icon-card img {
+        width: 40px;
+        height: 40px;
+    }
 }
