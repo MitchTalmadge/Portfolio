@@ -24,7 +24,7 @@ import {Subscription} from "rxjs/Subscription";
 @Component({
     selector: "mt-header",
     templateUrl: "header.component.html",
-    styleUrls: ["header.component.css"],
+    styleUrls: ["header.component.scss"],
 })
 
 export class MTHeaderComponent implements OnInit, OnDestroy {

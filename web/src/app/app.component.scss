@@ -39,7 +39,7 @@ h3 {
   color: #666;
 }
 
-@include media-breakpoint-only(md) {
+@include media-breakpoint-down(lg) {
   #mt-app-container {
     padding-left: 180px;
   }
