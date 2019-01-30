@@ -28,13 +28,13 @@ export class ServiceComponent implements OnInit {
 
     public serviceImages: { [id: string]: string[] } = {
         "fll-2014": [
-            require("./images/First LEGO League 2014.jpg"),
+            require("./images/fll-2014.jpg"),
         ],
         "fll-2015": [
-            require("./images/First LEGO League 2015.jpg"),
+            require("./images/fll-2015.jpg"),
         ],
         "fll-2016": [
-            require("./images/First LEGO League 2016.jpg"),
+            require("./images/fll-2016.jpg"),
         ],
     };
 
