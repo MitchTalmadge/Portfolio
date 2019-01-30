@@ -27,31 +27,31 @@ export class MTAwardsComponent implements OnInit {
 
     public awardImages: { [id: string]: string[] } = {
         "sterling-1": [
-            require("./images/Award_SterlingScholar_Winner.jpg")
+            require("./images/scaled/Award_SterlingScholar_Winner.jpg"),
         ],
         "sterling-2": [
-            require("./images/Award_SterlingScholar_ComputerTech.jpg")
+            require("./images/scaled/Award_SterlingScholar_ComputerTech.jpg"),
         ],
         "sterling-3": [
-            require("./images/Award_SterlingScholar_SkilledAndTech.jpg")
+            require("./images/scaled/Award_SterlingScholar_SkilledAndTech.jpg"),
         ],
         "cusef-1": [
-            require("./images/CUSEF1.jpg")
+            require("./images/scaled/CUSEF1.jpg"),
         ],
         "cusef-2": [
-            require("./images/CUSEF2.jpg")
+            require("./images/scaled/CUSEF2.jpg"),
         ],
         "cusef-3": [
-            require("./images/CUSEF3.jpg")
+            require("./images/scaled/CUSEF3.jpg"),
         ],
         "middle-1": [
-            require("./images/Award_Elkridge_Programming.jpg")
+            require("./images/scaled/Award_Elkridge_Programming.jpg"),
         ],
         "middle-2": [
-            require("./images/Award_Elkridge_StageCrew.jpg")
+            require("./images/scaled/Award_Elkridge_StageCrew.jpg"),
         ],
         "middle-3": [
-            require("./images/Award_Elkridge_Citizenship.jpg")
+            require("./images/scaled/Award_Elkridge_Citizenship.jpg"),
         ],
     };
 

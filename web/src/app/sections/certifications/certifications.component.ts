@@ -27,37 +27,31 @@ export class MTCertificationsComponent implements OnInit {
 
     public certificationImages: { [id: string]: string[] } = {
         "mta-software": [
-            require("./images/SoftwareDevelopmentFundamentals.jpg"),
+            require("./images/scaled/SoftwareDevelopmentFundamentals.jpg"),
         ],
         "mta-security": [
-            require("./images/SecurityFundamentals.jpg"),
+            require("./images/scaled/SecurityFundamentals.jpg"),
         ],
         "mta-html5": [
-            require("./images/HTML5ApplicationDevelopmentFundamentals.jpg"),
+            require("./images/scaled/HTML5ApplicationDevelopmentFundamentals.jpg"),
         ],
         "cte-programming": [
-            require("./images/Skill_Programming_1.jpg"),
-            require("./images/Skill_Programming_2.jpg"),
+            require("./images/scaled/Skill_Programming.jpg"),
         ],
         "cte-tech": [
-            require("./images/Skill_Foundations_Of_Tech_1.jpg"),
-            require("./images/Skill_Foundations_Of_Tech_2.jpg"),
+            require("./images/scaled/Skill_Foundations_Of_Tech.jpg"),
         ],
         "cte-electronics": [
-            require("./images/Skill_Electronics_1.jpg"),
-            require("./images/Skill_Electronics_2.jpg"),
+            require("./images/scaled/Skill_Electronics.jpg"),
         ],
         "cte-woodworking": [
-            require("./images/Skill_Woodworking_1.jpg"),
-            require("./images/Skill_Woodworking_2.jpg"),
+            require("./images/scaled/Skill_Woodworking.jpg"),
         ],
         "cte-3d": [
-            require("./images/Skill_3DGraphics_1.jpg"),
-            require("./images/Skill_3DGraphics_2.jpg"),
+            require("./images/scaled/Skill_3DGraphics.jpg"),
         ],
         "cte-auto": [
-            require("./images/Skill_Auto_1.jpg"),
-            require("./images/Skill_Auto_2.jpg"),
+            require("./images/scaled/Skill_Auto.jpg"),
         ],
     };
 
