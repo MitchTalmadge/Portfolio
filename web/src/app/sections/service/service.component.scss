@@ -1,4 +1,4 @@
-/*
+/*!
  * Mitch Talmadge's Web Portfolio
  * Copyright (C) 2019 Mitch Talmadge
  *
@@ -16,31 +16,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {Component, OnInit} from "@angular/core";
-
-@Component({
-    selector: "service",
-    templateUrl: "service.component.html",
-    styleUrls: ["service.component.scss"],
-})
-
-export class ServiceComponent implements OnInit {
-
-    public serviceImages: { [id: string]: string[] } = {
-        "fll-2014": [
-            require("./images/First LEGO League 2014.jpg"),
-        ],
-        "fll-2015": [
-            require("./images/First LEGO League 2015.jpg"),
-        ],
-        "fll-2016": [
-            require("./images/First LEGO League 2016.jpg"),
-        ],
-    };
-
-    constructor() {
-    }
-
-    public ngOnInit() {
-    }
+.card {
+  border: none;
+  box-shadow: 1px 1px 6px 0 rgba(0,0,0,0.3);
 }
