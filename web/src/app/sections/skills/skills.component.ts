@@ -30,7 +30,7 @@ export class MTSkillsComponent implements OnInit {
         "java": require("./images/Java.svg"),
         "android": require("./images/Android.svg"),
         "linux": require("./images/Linux.svg"),
-        "php": require("./images/MySQL.svg"),
+        "php": require("./images/PHP.svg"),
         "mysql": require("./images/MySQL.svg"),
         "wordpress": require("./images/WordPress.svg"),
         "autodesk": require("./images/Autodesk.svg"),
