@@ -28,10 +28,10 @@ export class ServiceComponent implements OnInit {
 
     public hackTheUImages: { [id: string]: string[] } = {
         before: [
-            require("./images/hacktheu-before.png"),
+            require("./images/hacktheu-before.jpg"),
         ],
         after: [
-            require("./images/hacktheu-after.png"),
+            require("./images/hacktheu-after.jpg"),
         ],
     };
 
