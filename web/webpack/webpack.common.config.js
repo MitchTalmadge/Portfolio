@@ -70,7 +70,8 @@ const config = {
                 use: ["json-loader", "yaml-loader"]
             },
             {
-                test: /manifest\.json$/,
+                type: 'javascript/auto',
+                test: /\.json$/,
                 use: "file-loader?name=./resources/json/[hash].[ext]"
             },
             {
@@ -84,7 +85,7 @@ const config = {
             {
                 test: /\.[a-zA-Z0-9]+$/,
                 use: 'file-loader?name=./resources/static/[name].[ext]',
-                exclude: [new RegExp('^((?!\\'+path.sep+'static\\'+path.sep+').)+$')]
+                exclude: [new RegExp('^((?!\\' + path.sep + 'static\\' + path.sep + ').)+$')]
             }
         ]
     },
@@ -103,7 +104,7 @@ const config = {
             Tether: 'tether',
             "window.tether": 'tether',
             "window.Tether": 'tether',
-            Popper: 'popper.js'
+            Popper: 'popper.js',
         }),
 
         new HtmlWebpackPlugin({

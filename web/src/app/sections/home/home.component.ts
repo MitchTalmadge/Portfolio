@@ -16,13 +16,20 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {Component} from "@angular/core";
+import {AfterViewInit, Component} from "@angular/core";
+import "particles.js/particles";
+declare const particlesJS: any;
 
 @Component({
     selector: "home",
     templateUrl: "home.component.html",
     styleUrls: ["home.component.css"],
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
 
+    private readonly particlesConfig = require("./particles-config.json");
+
+    public ngAfterViewInit(): void {
+        particlesJS.load("project-highlights", this.particlesConfig, null);
+    }
 }
