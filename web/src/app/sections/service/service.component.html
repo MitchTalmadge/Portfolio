@@ -27,17 +27,69 @@
                             <h2>HackTheU</h2>
                         </div>
                         <div class="col-6 col-md-4 mb-3">
-                            <img class="img-fluid rounded" src="./images/hack-the-u.jpg" alt=""/>
+                            <img class="img-fluid rounded" style="height: 100px;" src="./images/hacktheu.svg" alt=""/>
                         </div>
                         <div class="col-12">
-                            <p>2019 - Present | Total Hours: 3 (and counting)</p>
+                            <p>2019 - Present | Time Commitment: 44 Hours (and counting)</p>
                             <hr/>
                             <p class="lead">
-                                At the University of Utah I am a Director of HackTheU for the 2019-2020 school year. My
-                                responsibilities
-                                are to lead a team of web developers in creating the event website as well as a private
-                                site to be ran during
-                                the event to provide updates to competitors.
+                                HackTheU hosts free hackathons, workshops, and other events for college students all
+                                across Utah to promote our local tech community.
+                            </p>
+                            <p class="lead">
+                                As a Director of HackTheU, I lead a team of web developers in a complete frontend
+                                overhaul, including a brand new responsive website served via CloudFlare CDN, a live IRC
+                                chat server for use during events, and a help queueing system; all hosted on Amazon AWS
+                                with the use of Docker. I also secured the organization's systems from attacks,
+                                including those stemming from often mis-configured email DNS settings. Lastly, I took
+                                key part in seeking out venues and organizing the logistics of said events.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+                            <mt-showcase [title]="'Website - Before'"
+                                         [images]="hackTheUImages['before']">
+                            </mt-showcase>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+                            <mt-showcase [title]="'Website - After'"
+                                         [images]="hackTheUImages['after']">
+                            </mt-showcase>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 mb-2">
+                            <h2>CS Community Chatroom</h2>
+                        </div>
+                        <div class="col-6 col-md-4 mb-3">
+                            <img class="img-fluid rounded" style="height: 100px;" src="./images/csattheu.svg" alt=""/>
+                        </div>
+                        <div class="col-12">
+                            <p>2016 - Present | Time Commitment: Whenever I can, day or night.</p>
+                            <hr/>
+                            <p class="lead">
+                                Upon starting my college career at the University of Utah, I noticed a severe lack of
+                                communication between students of the School of Computing. For this reason, I started a
+                                chatroom exclusively for computer science students. I have spent countless hours of my
+                                life managing this chatroom with over 250 student members, helping students to
+                                understand
+                                concepts and assignments in any class I can, from early beginner classes to the most
+                                advanced.
+                            </p>
+                            <p class="lead">
+                                To help me moderate the chatroom, I have heavily automated the chatroom through a <a
+                                    href="https://github.com/MitchTalmadge/UofU-CS-Bot" target="_blank"><i class="fab fa-github"></i> custom
+                                bot</a> that I developed using Java Spring Boot and the Discord APIs. Students, TAs, and
+                                Professors are automatically placed into roles and chatrooms based on their enrollment
+                                status.
                             </p>
                         </div>
                     </div>
@@ -58,7 +110,7 @@
                             <img class="img-fluid rounded" src="./images/fll-logo.jpg" alt=""/>
                         </div>
                         <div class="col-12">
-                            <p>2014 - Present | Total Hours: 48 (and counting)</p>
+                            <p>2014 - Present | Time Commitment: 48 Hours (and counting)</p>
                             <hr/>
                             <p class="lead">
                                 Each year I support my local FIRST LEGO League chapter by helping to host the regional
@@ -75,17 +127,17 @@
 
                         <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
                             <mt-showcase [title]="'FLL Certificate - 2014'"
-                                         [images]="serviceImages['fll-2014']">
+                                         [images]="fllImages['2014']">
                             </mt-showcase>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
                             <mt-showcase [title]="'FLL Certificate - 2015'"
-                                         [images]="serviceImages['fll-2015']">
+                                         [images]="fllImages['2015']">
                             </mt-showcase>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
                             <mt-showcase [title]="'FLL Certificate - 2016'"
-                                         [images]="serviceImages['fll-2016']">
+                                         [images]="fllImages['2016']">
                             </mt-showcase>
                         </div>
                     </div>
@@ -106,7 +158,7 @@
                             <img class="img-fluid rounded" src="./images/leonardo.jpg" alt=""/>
                         </div>
                         <div class="col-12">
-                            <p>2016 - 2017 | Total Hours: 19</p>
+                            <p>2016 - 2017 | Time Commitment: 19 Hours</p>
                             <hr/>
                             <p class="lead">
                                 Keeping with my theme of LEGO related volunteering, in 2016 and 2017 I spent many
@@ -137,7 +189,7 @@
                             <img class="img-fluid rounded" src="./images/icpc-logo.jpg" alt=""/>
                         </div>
                         <div class="col-12">
-                            <p>2016 | Total Hours: 10</p>
+                            <p>2016 | Time Commitment: 10 Hours</p>
                             <hr/>
                             <p class="lead">
                                 I volunteered to help organize a regional programming contest with competitors from U of

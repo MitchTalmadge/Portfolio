@@ -67,7 +67,7 @@ export class MTHeaderComponent implements OnInit, OnDestroy {
         },
         {
             title: "Service",
-            subtitle: "Helping the Community",
+            subtitle: "Giving Back Whenever Possible",
             route: "/service",
             strict: true,
         },

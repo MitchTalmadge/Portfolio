@@ -26,14 +26,23 @@ import {Component, OnInit} from "@angular/core";
 
 export class ServiceComponent implements OnInit {
 
-    public serviceImages: { [id: string]: string[] } = {
-        "fll-2014": [
+    public hackTheUImages: { [id: string]: string[] } = {
+        before: [
+            require("./images/hacktheu-before.png"),
+        ],
+        after: [
+            require("./images/hacktheu-after.png"),
+        ],
+    };
+
+    public fllImages: { [id: string]: string[] } = {
+        2014: [
             require("./images/fll-2014.jpg"),
         ],
-        "fll-2015": [
+        2015: [
             require("./images/fll-2015.jpg"),
         ],
-        "fll-2016": [
+        2016: [
             require("./images/fll-2016.jpg"),
         ],
     };
