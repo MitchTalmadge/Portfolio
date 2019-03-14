@@ -20,32 +20,11 @@ import {Component, OnInit} from "@angular/core";
 
 @Component({
     selector: "work-experience",
-    templateUrl: "service.component.html",
-    styleUrls: ["service.component.scss"],
+    templateUrl: "work-experience.component.html",
+    styleUrls: ["work-experience.component.scss"],
 })
 
-export class ServiceComponent implements OnInit {
-
-    public hackTheUImages: { [id: string]: string[] } = {
-        before: [
-            require("./images/hacktheu-before.jpg"),
-        ],
-        after: [
-            require("./images/hacktheu-after.jpg"),
-        ],
-    };
-
-    public fllImages: { [id: string]: string[] } = {
-        2014: [
-            require("./images/fll-2014.jpg"),
-        ],
-        2015: [
-            require("./images/fll-2015.jpg"),
-        ],
-        2016: [
-            require("./images/fll-2016.jpg"),
-        ],
-    };
+export class WorkExperienceComponent implements OnInit {
 
     constructor() {
     }

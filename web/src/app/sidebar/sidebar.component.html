@@ -30,7 +30,7 @@
                routerLinkActive="active"
                [routerLinkActiveOptions]="{ exact: link.strict }">
                 <span class="d-none d-md-inline mr-3">{{link.name}}</span>
-                <span class="d-none d-md-block float-md-right text-center" style="width: 20px"><i class="{{link.icon}}"></i></span>
+                <span class="d-none d-md-block float-md-right text-center" style="width: 20px"><i class="{{link.icon}} fa-fw"></i></span>
 
                 <span class="d-block d-md-none text-center"><i class="{{link.icon}}"></i></span>
             </a>
@@ -39,8 +39,8 @@
             <a class="mt-sidebar-link pr-0 pr-md-3 mb-2"
                *ngIf="!link.route && link.url"
                [href]="link.url">
-                <span class="d-none d-md-inline">{{link.name}}</span>
-                <span class="d-none d-md-block float-md-right text-center" style="width: 20px"><i class="{{link.icon}}"></i></span>
+                <span class="d-none d-md-inline mr-3">{{link.name}}</span>
+                <span class="d-none d-md-block float-md-right text-center" style="width: 20px"><i class="{{link.icon}} fa-fw"></i></span>
 
                 <span class="d-block d-md-none text-center"><i class="{{link.icon}}"></i></span>
             </a>

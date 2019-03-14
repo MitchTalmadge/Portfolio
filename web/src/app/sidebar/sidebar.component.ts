@@ -43,8 +43,14 @@ export class MTSidebarComponent implements OnInit {
             strict: true,
         },
         {
+            name: "Experience",
+            icon: "fas fa-briefcase",
+            route: "/work-experience",
+            strict: true,
+        },
+        {
             name: "Skills",
-            icon: "fas fa-toolbox",
+            icon: "fas fa-laptop-code",
             route: "/skills",
             strict: true,
         },

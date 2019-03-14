@@ -29,28 +29,32 @@ const routes: Routes = [
         loadChildren: "./app/sections/articles/articles.module#ArticlesModule",
     },
     {
-        path: "biography",
-        loadChildren: "./app/sections/biography/biography.module#BiographyModule",
+        path: "awards",
+        loadChildren: "./app/sections/awards/awards.module#MTAwardsModule",
     },
     {
-        path: "skills",
-        loadChildren: "./app/sections/skills/skills.module#MTSkillsModule",
+        path: "biography",
+        loadChildren: "./app/sections/biography/biography.module#BiographyModule",
     },
     {
         path: "certifications",
         loadChildren: "./app/sections/certifications/certifications.module#MTCertificationsModule",
     },
     {
-        path: "awards",
-        loadChildren: "./app/sections/awards/awards.module#MTAwardsModule",
+        path: "contact",
+        loadChildren: "./app/sections/contact/contact.module#MTContactModule",
     },
     {
         path: "service",
         loadChildren: "./app/sections/service/service.module#ServiceModule",
     },
     {
-        path: "contact",
-        loadChildren: "./app/sections/contact/contact.module#MTContactModule",
+        path: "skills",
+        loadChildren: "./app/sections/skills/skills.module#MTSkillsModule",
+    },
+    {
+        path: "work-experience",
+        loadChildren: "./app/sections/work-experience/work-experience.module#WorkExperienceModule",
     },
     {
         path: "**",

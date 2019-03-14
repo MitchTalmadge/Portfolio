@@ -19,7 +19,7 @@
 import {Component, OnInit} from "@angular/core";
 
 @Component({
-    selector: "service",
+    selector: "work-experience",
     templateUrl: "certifications.component.html",
 })
 
