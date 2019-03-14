@@ -51,7 +51,6 @@ export class MTHeaderComponent implements OnInit, OnDestroy {
         },
         {
             title: "Work Experience",
-            subtitle: "",
             route: "/work-experience",
             strict: true,
         },
@@ -72,8 +71,7 @@ export class MTHeaderComponent implements OnInit, OnDestroy {
             strict: true,
         },
         {
-            title: "Service",
-            subtitle: "Giving Back Whenever Possible",
+            title: "Community Service",
             route: "/service",
             strict: true,
         },
