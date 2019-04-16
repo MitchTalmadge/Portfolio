@@ -27,13 +27,6 @@
             </a>
         </div>
 
-        <!-- Twitter -->
-        <div class="col-6 col-md-3 col-xl-2 mb-3 mb-md-0 d-flex justify-content-center">
-            <a class="mt-social-link" href="https://twitter.com/MitchTalmadge" target="_blank">
-                <img src="images/twitter.svg" width="100" alt="Twitter"/>
-            </a>
-        </div>
-
         <!-- Github -->
         <div class="col-6 col-md-3 col-xl-2 d-flex justify-content-center">
             <a class="mt-social-link" href="https://github.com/MitchTalmadge" target="_blank">
@@ -43,8 +36,15 @@
 
         <!-- Stack Overflow -->
         <div class="col-6 col-md-3 col-xl-2 d-flex justify-content-center">
-            <a class="mt-social-link" href="http://stackoverflow.com/users/2364405/mitch-talmadge" target="_blank">
+            <a class="mt-social-link" href="https://stackoverflow.com/users/2364405/mitch-talmadge" target="_blank">
                 <img src="images/stackoverflow.svg" width="100" alt="Stack Overflow"/>
+            </a>
+        </div>
+
+        <!-- Twitter -->
+        <div class="col-6 col-md-3 col-xl-2 mb-3 mb-md-0 d-flex justify-content-center">
+            <a class="mt-social-link" href="https://twitter.com/MitchTalmadge" target="_blank">
+                <img src="images/twitter.svg" width="100" alt="Twitter"/>
             </a>
         </div>
 
@@ -64,10 +64,13 @@
             <glass-panel>
                 <glass-panel-header>
                     <h2 class="text-center">Résumé</h2>
-                    <p class="text-center mb-0 lead"><a class="badge badge-secondary" [href]="resume" target="_blank"><i class="fas fa-external-link-alt"></i> Grab a copy.</a></p>
+                    <p class="text-center mb-0 lead"><a class="badge badge-secondary" [href]="resume" target="_blank"><i
+                            class="fas fa-external-link-alt"></i> Grab a copy.</a></p>
                 </glass-panel-header>
                 <glass-panel-body>
-                    <img src="images/resume.png" alt="" style="width: 100%"/>
+                    <a [href]="resume">
+                        <img src="images/resume.png" alt="" style="width: 100%"/>
+                    </a>
                 </glass-panel-body>
             </glass-panel>
         </div>
@@ -75,7 +78,8 @@
             <glass-panel>
                 <glass-panel-header>
                     <h2 class="text-center">Résumé</h2>
-                    <p class="text-center mb-0 lead"><a class="badge badge-secondary" [href]="resume" target="_blank"><i class="fas fa-external-link-alt"></i> Grab a copy.</a></p>
+                    <p class="text-center mb-0 lead"><a class="badge badge-secondary" [href]="resume" target="_blank"><i
+                            class="fas fa-external-link-alt"></i> Grab a copy.</a></p>
                 </glass-panel-header>
             </glass-panel>
         </div>
