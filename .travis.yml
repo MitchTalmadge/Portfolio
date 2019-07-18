@@ -56,4 +56,4 @@ jobs:
         script:
           - heroku deploy:jar portfolio.jar --app mitchtalmadge-portfolio
         on:
-          tags: true
+          branch: master
