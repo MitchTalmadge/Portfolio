@@ -16,10 +16,38 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+@import "~bootstrap/scss/bootstrap-grid";
+
 .mt-social-link {
     transition: margin-top 300ms ease-in-out;
 }
 
 .mt-social-link:hover {
     margin-top: -8px;
+}
+
+.mt-social-link > img {
+    width: 100px;
+}
+
+@include media-breakpoint-between(sm, md) {
+    .mt-social-link > img {
+        width: 75px;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .mt-social-link > img {
+        width: 50px;
+    }
+
+    .email-badge {
+        font-size: 65%;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .email-badge {
+        font-size: 100%;
+    }
 }
