@@ -90,10 +90,19 @@ h3 {
 
 /* Images */
 
-img.mt-image-round {
+.mt-circle-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.mt-circle-image-container > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding: 5px;
   border-radius: 300px;
   border: 6px solid #A2C4CE;
-  width: max-content;
-  height: auto;
 }
