@@ -16,6 +16,14 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+@import "~bootstrap/scss/bootstrap-grid";
+
+.greeting-row {
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #B6DBE4;
+    border-radius: 30px;
+}
+
 .greeting {
     font-family: Lobster, Nunito, sans-serif;
 }
@@ -28,4 +36,20 @@
 
     background: url('../../../resources/images/blue-background.jpg') no-repeat fixed;
     background-size: cover;
+}
+
+.forest {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    width: calc(100vw - 225px);
+}
+
+@include media-breakpoint-down(lg) {
+    .forest {
+        position: relative;
+        width: 100%;
+    }
 }
