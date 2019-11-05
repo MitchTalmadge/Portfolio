@@ -67,7 +67,7 @@ const routes: Routes = [
  * The root routing module. Other routes can be found next to their respective features.
  */
 @NgModule({
-    imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: "enabled"})],
+    imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: "enabled", useHash: true})],
     exports: [RouterModule],
 })
 export class AppRoutesModule {
