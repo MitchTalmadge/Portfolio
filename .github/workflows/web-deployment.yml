@@ -21,11 +21,11 @@ jobs:
     - name: Prepare for Deployment
       if: success()
       run: |
-        echo "mitchtalmadge.com" > web/bin/CNAME
+        echo "mitchtalmadge.com" > web/dist/CNAME
     - name: Deploy to gh-pages
       if: success()
       uses: crazy-max/ghaction-github-pages@v1.0.1
       env:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
       with:
-        build_dir: web/bin
+        build_dir: web/dist

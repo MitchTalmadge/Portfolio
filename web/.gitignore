@@ -2,7 +2,7 @@
 node_modules/
 lib/
 bin/
+dist/
 npm-debug.log*
-package-lock.json
 .awcache/
 src/*.js
