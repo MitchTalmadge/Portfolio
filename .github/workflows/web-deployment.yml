@@ -1,0 +1,27 @@
+name: Web Deployment
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1.1.0
+    - name: Install Dependencies
+      run: npm --prefix web install
+    - name: Build
+      if: success()
+      run: npm --prefix web run build
+    - name: Deploy to gh-pages
+      if: success()
+      uses: crazy-max/ghaction-github-pages@v1.0.1
+      env:
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+      with:
+        build_dir: web/bin
