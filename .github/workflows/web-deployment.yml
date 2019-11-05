@@ -18,6 +18,10 @@ jobs:
     - name: Build
       if: success()
       run: npm --prefix web run build
+    - name: Prepare for Deployment
+      if: success()
+      run: |
+        echo "mitchtalmadge.com" > web/bin/CNAME
     - name: Deploy to gh-pages
       if: success()
       uses: crazy-max/ghaction-github-pages@v1.0.1
