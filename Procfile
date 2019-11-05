@@ -1,1 +1,0 @@
-web: java -jar portfolio.jar
