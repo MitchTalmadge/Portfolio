@@ -18,11 +18,12 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const outputPath = "../bin";
+const outputPath = "../dist";
 
 const config = {
     cache: true,
@@ -121,7 +122,11 @@ const config = {
             },
         }),
 
-        new CleanWebpackPlugin(['bin'], {root: path.join(__dirname, '../')}),
+        new CleanWebpackPlugin(['dist'], {root: path.join(__dirname, '../')}),
+
+        new CopyWebpackPlugin([
+            { from: path.join(__dirname, '../src/static/'), to: path.join(__dirname, outputPath) }
+        ])
     ],
 
     optimization: {

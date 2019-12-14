@@ -16,15 +16,38 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.mitchtalmadge.portfolio.web.api.controllers;
+@import "~bootstrap/scss/bootstrap-grid";
 
-import com.mitchtalmadge.portfolio.web.api.APIControllerAbstract;
-import com.mitchtalmadge.portfolio.web.api.annotations.APIController;
+.mt-social-link {
+    transition: margin-top 300ms ease-in-out;
+}
 
-/**
- * Controller for the "Contact Mitch" page.
- */
-@APIController
-public class ContactController extends APIControllerAbstract {
+.mt-social-link:hover {
+    margin-top: -8px;
+}
 
+.mt-social-link > img {
+    width: 100px;
+}
+
+@include media-breakpoint-between(sm, md) {
+    .mt-social-link > img {
+        width: 75px;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .mt-social-link > img {
+        width: 50px;
+    }
+
+    .email-badge {
+        font-size: 65%;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .email-badge {
+        font-size: 100%;
+    }
 }

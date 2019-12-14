@@ -19,7 +19,6 @@
 import {NgModule} from "@angular/core";
 
 import {SharedModule} from "../../../shared/shared.module";
-import {ContactFormComponent} from "./contact-form/contact-form.component";
 import {ContactComponent} from "./contact.component";
 import {MTContactRoutesModule} from "./contact.routes";
 
@@ -31,7 +30,6 @@ import {MTContactRoutesModule} from "./contact.routes";
     exports: [],
     declarations: [
         ContactComponent,
-        ContactFormComponent,
     ],
     providers: [],
 })
