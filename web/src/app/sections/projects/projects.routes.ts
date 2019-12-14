@@ -18,12 +18,12 @@
 
 import {NgModule} from "@angular/core";
 import {RouterModule, Routes} from "@angular/router";
-import {MTServiceComponent} from "./service.component";
+import {MTProjectsComponent} from "./projects.component";
 
 const routes: Routes = [
     {
         path: "",
-        component: MTServiceComponent,
+        component: MTProjectsComponent,
     },
 ];
 
@@ -36,5 +36,5 @@ const routes: Routes = [
     ],
     providers: [],
 })
-export class MTServiceRoutesModule {
+export class MTProjectsRoutesModule {
 }

@@ -19,12 +19,12 @@
 import {Component, OnInit} from "@angular/core";
 
 @Component({
-    selector: "work-experience",
+    selector: "service",
     templateUrl: "service.component.html",
     styleUrls: ["service.component.scss"],
 })
 
-export class ServiceComponent implements OnInit {
+export class MTServiceComponent implements OnInit {
 
     public hackTheUImages: { [id: string]: string[] } = {
         before: [

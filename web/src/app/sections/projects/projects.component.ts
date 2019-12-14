@@ -16,25 +16,17 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {NgModule} from "@angular/core";
-import {RouterModule, Routes} from "@angular/router";
-import {MTServiceComponent} from "./service.component";
+import {Component, OnInit} from "@angular/core";
 
-const routes: Routes = [
-    {
-        path: "",
-        component: MTServiceComponent,
-    },
-];
-
-@NgModule({
-    imports: [
-        RouterModule.forChild(routes),
-    ],
-    exports: [
-        RouterModule,
-    ],
-    providers: [],
+@Component({
+    selector: "projects",
+    templateUrl: "projects.component.html",
 })
-export class MTServiceRoutesModule {
+export class MTProjectsComponent implements OnInit {
+
+    constructor() {
+    }
+
+    public ngOnInit() {
+    }
 }

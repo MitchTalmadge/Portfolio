@@ -19,17 +19,17 @@
 import {NgModule} from "@angular/core";
 
 import {SharedModule} from "../../../shared/shared.module";
-import {ServiceComponent} from "./service.component";
-import {ServiceRoutesModule} from "./service.routes";
+import {MTServiceComponent} from "./service.component";
+import {MTServiceRoutesModule} from "./service.routes";
 
 @NgModule({
     imports: [
         SharedModule,
-        ServiceRoutesModule,
+        MTServiceRoutesModule,
     ],
     exports: [],
-    declarations: [ServiceComponent],
+    declarations: [MTServiceComponent],
     providers: [],
 })
-export class ServiceModule {
+export class MTServiceModule {
 }
