@@ -17,7 +17,6 @@
  */
 
 import {ErrorHandler, NgModule, Optional, SkipSelf} from "@angular/core";
-import {HttpModule} from "@angular/http";
 import {CustomErrorHandler} from "./error-handler";
 import {LoaderService} from "./services/loader.service";
 
@@ -26,7 +25,6 @@ import {LoaderService} from "./services/loader.service";
  */
 @NgModule({
     imports: [
-        HttpModule,
     ],
     declarations: [],
     exports: [],
