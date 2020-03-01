@@ -72,12 +72,12 @@ export class MTSidebarComponent implements OnInit {
             route: "/certifications",
             strict: true,
         },
-        {
-            name: "Projects",
-            icon: "fas fa-code",
-            route: "/projects",
-            strict: false,
-        },
+        // {
+        //     name: "Projects",
+        //     icon: "fas fa-code",
+        //     route: "/projects",
+        //     strict: false,
+        // },
         {
             name: "Articles",
             icon: "fas fa-align-left",
