@@ -1,9 +1,6 @@
 name: Web App
 
-on:
-  push:
-    branches: 
-      - !gh-pages
+on: [push, pull_request]
 
 jobs:
   install:
