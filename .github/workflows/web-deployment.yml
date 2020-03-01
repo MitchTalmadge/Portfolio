@@ -1,31 +1,45 @@
-name: Web Deployment
+name: Web App
 
-on:
-  push:
-    branches: 
-      - master
+on: [push, pull_request]
 
 jobs:
-  build:
-
+  install_and_build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v1
-    - uses: actions/setup-node@v1.1.0
-    - name: Install Dependencies
-      run: npm --prefix web install
-    - name: Build
-      if: success()
-      run: npm --prefix web run build
-    - name: Prepare for Deployment
-      if: success()
-      run: |
-        echo "mitchtalmadge.com" > web/dist/CNAME
-    - name: Deploy to gh-pages
-      if: success()
-      uses: crazy-max/ghaction-github-pages@v1.0.1
-      env:
-        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
-      with:
-        build_dir: web/dist
+      - name: Setup Environment
+        uses: actions/setup-node@v1.1.0
+
+      - name: Checkout Repository
+        uses: actions/checkout@v1
+      
+      - name: Install Dependencies
+        run: npm --prefix web install
+
+      - name: Build
+        run: npm --prefix web run build      
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: dist
+          path: web/dist
+  deploy:
+    runs-on: ubuntu-latest
+    needs: install_and_build
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v1
+        with:
+          name: dist
+          path: web/dist
+
+      - name: Prepare for Deployment
+        run: echo "mitchtalmadge.com" > web/dist/CNAME
+
+      - name: Deploy to gh-pages
+        uses: crazy-max/ghaction-github-pages@v1.0.1
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+        with:
+          build_dir: web/dist
