@@ -16,9 +16,25 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-p {
-    font-family: 'Nunito', sans-serif;
-    font-size: 19px;
-    font-weight: 500;
-    color: #666;
+import {NgModule} from "@angular/core";
+import {RouterModule, Routes} from "@angular/router";
+import { AboutComponent } from "./about.component";
+
+const routes: Routes = [
+    {
+        path: "",
+        component: AboutComponent,
+    },
+];
+
+@NgModule({
+    imports: [
+        RouterModule.forChild(routes),
+    ],
+    exports: [
+        RouterModule,
+    ],
+    providers: [],
+})
+export class AboutRoutesModule {
 }

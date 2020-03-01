@@ -40,6 +40,11 @@ export class MTHeaderComponent implements OnInit, OnDestroy {
             strict: true,
         },
         {
+            title: "About Mitch",
+            route: "/about",
+            strict: true,
+        },
+        {
             title: "Articles",
             route: "/articles",
             strict: true,
@@ -47,11 +52,6 @@ export class MTHeaderComponent implements OnInit, OnDestroy {
         {
             title: "Awards",
             route: "/awards",
-            strict: true,
-        },
-        {
-            title: "Biography",
-            route: "/biography",
             strict: true,
         },
         {

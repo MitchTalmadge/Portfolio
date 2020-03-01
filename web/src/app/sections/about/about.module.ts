@@ -17,24 +17,21 @@
  */
 
 import {NgModule} from "@angular/core";
-import {RouterModule, Routes} from "@angular/router";
-import {BiographyComponent} from "./biography.component";
 
-const routes: Routes = [
-    {
-        path: "",
-        component: BiographyComponent,
-    },
-];
+import {SharedModule} from "../../../shared/shared.module";
+import { AboutComponent } from "./about.component";
+import {AboutRoutesModule} from "./about.routes";
 
 @NgModule({
     imports: [
-        RouterModule.forChild(routes),
+        SharedModule,
+        AboutRoutesModule,
     ],
-    exports: [
-        RouterModule,
+    declarations: [
+        AboutComponent,
     ],
+    exports: [],
     providers: [],
 })
-export class BiographyRoutesModule {
+export class AboutModule {
 }

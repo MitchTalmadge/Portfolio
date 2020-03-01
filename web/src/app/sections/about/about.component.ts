@@ -19,10 +19,10 @@
 import {Component} from "@angular/core";
 
 @Component({
-    selector: "biography",
-    templateUrl: "biography.component.html",
-    styleUrls: ["biography.component.css"],
+    selector: "about",
+    templateUrl: "about.component.html",
+    styleUrls: ["about.component.css"],
 })
-export class BiographyComponent {
+export class AboutComponent {
 
 }

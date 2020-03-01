@@ -16,22 +16,29 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {NgModule} from "@angular/core";
+.profile-picture {
+    border: 10px solid #B5DAE3; 
+    border-radius: 20px;
+    box-shadow: 0 0 0px 10px #eaf4f7;
+}
 
-import {SharedModule} from "../../../shared/shared.module";
-import {BiographyComponent} from "./biography.component";
-import {BiographyRoutesModule} from "./biography.routes";
+.greeting .main {
+    margin: 0;
 
-@NgModule({
-    imports: [
-        SharedModule,
-        BiographyRoutesModule,
-    ],
-    declarations: [
-        BiographyComponent,
-    ],
-    exports: [],
-    providers: [],
-})
-export class BiographyModule {
+    font-family: Courgette, Nunito, sans-serif;
+    font-size: 2rem;
+}
+
+.greeting .translation {
+    margin: 0;
+
+    font-family: Nunito, sans-serif;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    color: #666;
 }
