@@ -17,24 +17,19 @@
  */
 
 import {NgModule} from "@angular/core";
-import {RouterModule, Routes} from "@angular/router";
-import {BiographyComponent} from "./biography.component";
 
-const routes: Routes = [
-    {
-        path: "",
-        component: BiographyComponent,
-    },
-];
+import {SharedModule} from "../../../shared/shared.module";
+import {MTProjectsComponent} from "./projects.component";
+import {MTProjectsRoutesModule} from "./projects.routes";
 
 @NgModule({
     imports: [
-        RouterModule.forChild(routes),
+        SharedModule,
+        MTProjectsRoutesModule,
     ],
-    exports: [
-        RouterModule,
-    ],
+    exports: [],
+    declarations: [MTProjectsComponent],
     providers: [],
 })
-export class BiographyRoutesModule {
+export class MTProjectsModule {
 }

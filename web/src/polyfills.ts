@@ -15,9 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-
-import "core-js/es6";
-import "core-js/es7/reflect";
+import "core-js/features/reflect";
 require("zone.js/dist/zone");
 if (process.env.ENV === "production") {
     // Production

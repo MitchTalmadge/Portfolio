@@ -16,18 +16,13 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {Component, ViewEncapsulation} from "@angular/core";
+import {Component} from "@angular/core";
 
 @Component({
-    selector: "mt-app",
-    templateUrl: "app.component.html",
-    styleUrls: [
-        "app.component.scss",
-        "vendor/bootstrap.vendor.scss",
-        "vendor/fontawesome.vendor.scss"
-    ],
-    encapsulation: ViewEncapsulation.None,
+    selector: "about",
+    templateUrl: "about.component.html",
+    styleUrls: ["about.component.scss"],
 })
-export class MTAppComponent {
+export class AboutComponent {
 
 }

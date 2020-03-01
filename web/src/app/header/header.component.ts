@@ -40,34 +40,23 @@ export class MTHeaderComponent implements OnInit, OnDestroy {
             strict: true,
         },
         {
+            title: "About Mitch",
+            route: "/about",
+            strict: true,
+        },
+        {
             title: "Articles",
             route: "/articles",
             strict: true,
         },
         {
-            title: "Biography",
-            route: "/biography",
-            strict: true,
-        },
-        {
-            title: "Work Experience",
-            route: "/work-experience",
-            strict: true,
-        },
-        {
-            title: "Technical Skills",
-            subtitle: "Technologies and Experience",
-            route: "/skills",
+            title: "Awards",
+            route: "/awards",
             strict: true,
         },
         {
             title: "Certifications",
             route: "/certifications",
-            strict: true,
-        },
-        {
-            title: "Awards",
-            route: "/awards",
             strict: true,
         },
         {
@@ -78,6 +67,22 @@ export class MTHeaderComponent implements OnInit, OnDestroy {
         {
             title: "Contact Mitch",
             route: "/contact",
+            strict: true,
+        },
+        {
+            title: "Projects",
+            route: "/projects",
+            strict: true,
+        },
+        {
+            title: "Technical Skills",
+            subtitle: "Technologies and Experience",
+            route: "/skills",
+            strict: true,
+        },
+        {
+            title: "Work Experience",
+            route: "/work-experience",
             strict: true,
         },
     ];

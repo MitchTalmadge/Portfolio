@@ -1,4 +1,4 @@
-/*!
+/*
  * Mitch Talmadge's Web Portfolio
  * Copyright (C) 2019 Mitch Talmadge
  *
@@ -16,11 +16,25 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-@import "../../../node_modules/typeface-droid-sans/index.css";
-@import "../../../node_modules/typeface-lobster/index.css";
-@import "../../../node_modules/typeface-lobster-two/index.css";
-@import "../../../node_modules/typeface-nunito/index.css";
-@import "../../../node_modules/typeface-quicksand/index.css";
-@import "../../../node_modules/typeface-raleway/index.css";
-@import "../../../node_modules/typeface-roboto/index.css";
-@import "../../../node_modules/typeface-ubuntu/index.css";
+import {NgModule} from "@angular/core";
+import {RouterModule, Routes} from "@angular/router";
+import { AboutComponent } from "./about.component";
+
+const routes: Routes = [
+    {
+        path: "",
+        component: AboutComponent,
+    },
+];
+
+@NgModule({
+    imports: [
+        RouterModule.forChild(routes),
+    ],
+    exports: [
+        RouterModule,
+    ],
+    providers: [],
+})
+export class AboutRoutesModule {
+}

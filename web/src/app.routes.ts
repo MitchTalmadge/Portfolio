@@ -25,16 +25,16 @@ const routes: Routes = [
         loadChildren: "./app/sections/home/home.module#HomeModule",
     },
     {
+        path: "about",
+        loadChildren: "./app/sections/about/about.module#AboutModule",
+    },
+    {
         path: "articles",
         loadChildren: "./app/sections/articles/articles.module#ArticlesModule",
     },
     {
         path: "awards",
         loadChildren: "./app/sections/awards/awards.module#MTAwardsModule",
-    },
-    {
-        path: "biography",
-        loadChildren: "./app/sections/biography/biography.module#BiographyModule",
     },
     {
         path: "certifications",
@@ -45,8 +45,12 @@ const routes: Routes = [
         loadChildren: "./app/sections/contact/contact.module#MTContactModule",
     },
     {
+        path: "projects",
+        loadChildren: "./app/sections/projects/projects.module#MTProjectsModule",
+    },
+    {
         path: "service",
-        loadChildren: "./app/sections/service/service.module#ServiceModule",
+        loadChildren: "./app/sections/service/service.module#MTServiceModule",
     },
     {
         path: "skills",

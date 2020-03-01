@@ -16,40 +16,56 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-@import "~bootstrap/scss/bootstrap-grid";
+ @import "~bootstrap/scss/bootstrap-grid";
 
-.greeting-row {
-    background: rgba(255, 255, 255, 0.8);
-    border: 2px solid #B6DBE4;
-    border-radius: 30px;
+.profile-picture {
+    border: 10px solid #B5DAE3; 
+    border-radius: 20px;
+    box-shadow: 0 0 0px 10px #eaf4f7;
 }
 
-.greeting {
+.greeting .main {
+    margin: 0;
+
     font-family: Courgette, Nunito, sans-serif;
+    font-size: 2rem;
 }
 
-#project-highlights {
-    width: 100%;
-    height: 400px;
+.greeting .translation {
+    margin: 0;
 
-    padding: 20px 20px 20px 0;
-
-    background: url('../../../resources/images/blue-background.jpg') no-repeat fixed;
-    background-size: cover;
+    font-family: Nunito, sans-serif;
+    font-size: 1.5rem;
 }
 
-.forest {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-
-    width: calc(100vw - 225px);
+.mt-social-link:hover > img {
+    margin-top: 8px;
 }
 
-@include media-breakpoint-down(lg) {
-    .forest {
-        position: relative;
-        width: 100%;
+.mt-social-link > img {
+    width: 100px;
+    transition: margin-top 300ms ease-in-out;
+}
+
+@include media-breakpoint-between(sm, md) {
+    .mt-social-link > img {
+        width: 75px;
     }
+}
+
+@include media-breakpoint-down(xs) {
+    .mt-social-link > img {
+        width: 50px;
+    }
+
+    .email-badge {
+        font-size: 65%;
+    }
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    color: #666;
 }

@@ -19,11 +19,18 @@
 const path = require('path');
 const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const outputPath = "../dist";
+
+function resourceName(resourcePath, resourceQuery) {
+    if(process.env.NODE_ENV === 'development') {
+        return '[path][name]-[sha512:hash:base64:4].[ext]';
+    }
+    return '[hash].[ext]';
+}
 
 const config = {
     cache: true,
@@ -73,19 +80,47 @@ const config = {
             {
                 type: 'javascript/auto',
                 test: /\.json$/,
-                use: "file-loader?name=./resources/json/[hash].[ext]"
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: './resources/json',
+                        name: resourceName,
+                        esModule: false
+                    }
+                }]
             },
             {
                 test: /\.(png|jpg|gif|svg|ico)(\?v=[\d.]+)?$/,
-                use: "file-loader?name=./resources/images/[hash].[ext]"
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: './resources/images',
+                        name: resourceName,
+                        esModule: false
+                    }
+                }]
             },
             {
                 test: /\.(ttf|eot|woff|woff2)(\?v=[\d.]+)?$/,
-                use: 'file-loader?name=./resources/fonts/[hash].[ext]'
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: './resources/fonts',
+                        name: resourceName,
+                        esModule: false
+                    }
+                }]
             },
             {
                 test: /\.[a-zA-Z0-9]+$/,
-                use: 'file-loader?name=./resources/static/[name].[ext]',
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: './resources/static',
+                        name: resourceName,
+                        esModule: false
+                    }
+                }],
                 exclude: [new RegExp('^((?!\\' + path.sep + 'static\\' + path.sep + ').)+$')]
             }
         ]
@@ -122,7 +157,9 @@ const config = {
             },
         }),
 
-        new CleanWebpackPlugin(['dist'], {root: path.join(__dirname, '../')}),
+        new CleanWebpackPlugin({
+            dry: true
+        }),
 
         new CopyWebpackPlugin([
             { from: path.join(__dirname, '../src/static/'), to: path.join(__dirname, outputPath) }

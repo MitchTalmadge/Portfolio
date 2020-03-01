@@ -22,7 +22,6 @@ import {Component, OnInit} from "@angular/core";
     selector: "work-experience",
     templateUrl: "certifications.component.html",
 })
-
 export class MTCertificationsComponent implements OnInit {
 
     public certificationImages: { [id: string]: string[] } = {

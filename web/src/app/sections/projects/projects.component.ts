@@ -16,13 +16,17 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import {Component} from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 
 @Component({
-    selector: "biography",
-    templateUrl: "biography.component.html",
-    styleUrls: ["biography.component.css"],
+    selector: "projects",
+    templateUrl: "projects.component.html",
 })
-export class BiographyComponent {
+export class MTProjectsComponent implements OnInit {
 
+    constructor() {
+    }
+
+    public ngOnInit() {
+    }
 }
