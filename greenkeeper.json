@@ -3,6 +3,9 @@
     "default": {
       "packages": [
         "web/package.json"
+      ],
+      "ignore": [
+        "typescript"
       ]
     }
   }
