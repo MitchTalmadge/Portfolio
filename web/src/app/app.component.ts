@@ -24,8 +24,7 @@ import {Component, ViewEncapsulation} from "@angular/core";
     styleUrls: [
         "app.component.scss",
         "vendor/bootstrap.vendor.scss",
-        "vendor/fontawesome.vendor.scss",
-        "vendor/googlefonts.vendor.scss",
+        "vendor/fontawesome.vendor.scss"
     ],
     encapsulation: ViewEncapsulation.None,
 })
