@@ -9,11 +9,13 @@ jobs:
   install:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Environment
+        uses: actions/setup-node@v1.1.0
+
       - name: Checkout Repository
         uses: actions/checkout@v1
       
       - name: Install Dependencies
-        uses: actions/setup-node@v1.1.0
         run: npm --prefix web install
   build:
     runs-on: ubuntu-latest
@@ -27,8 +29,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Prepare for Deployment
-        run: |
-          echo "mitchtalmadge.com" > web/dist/CNAME
+        run: echo "mitchtalmadge.com" > web/dist/CNAME
       - name: Deploy to gh-pages
         uses: crazy-max/ghaction-github-pages@v1.0.1
         env:
