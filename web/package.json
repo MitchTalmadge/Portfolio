@@ -10,6 +10,11 @@
     "analyze": "webpack --config webpack/webpack.production.analyze.config.js --progress"
   },
   "license": "UNLICENSED",
+  "greenkeeper": {
+    "ignore": [
+      "typescript"
+    ]
+  },
   "dependencies": {
     "@angular/animations": "^9.0.4",
     "@angular/common": "^9.0.4",
