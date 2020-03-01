@@ -18,6 +18,7 @@
 
 const config = require('./webpack.common.config.js');
 const path = require('path');
+process.env.NODE_ENV = "development";
 config.mode = "development";
 
 config.module.rules.unshift(

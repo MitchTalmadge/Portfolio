@@ -20,6 +20,7 @@ const config = require('./webpack.common.config.js');
 const AngularCompilerPlugin = require('@ngtools/webpack').AngularCompilerPlugin;
 const path = require('path');
 
+process.env.NODE_ENV = "production";
 config.mode = "production";
 
 // Using AOT TypeScript compiler.
