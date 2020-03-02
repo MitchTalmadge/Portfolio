@@ -18,6 +18,43 @@
 
 <div class="container">
     <div class="row">
+        <div class="col-12 col-xl-10">
+            <h2>LinkedIn Skill Assessments</h2>
+            <hr/>
+            <p>
+                In LinkedIn's own words, "each skill assessment ... is constructed through a rigorous content creation and review process in partnership with LinkedIn Learning industry and subject matter experts."
+            </p>
+            <p>
+                I have currently passed the following assessments, with more to come as I find the time:
+            </p>
+            <div class="row">
+                <div class="col-12 col-md-8 col-xl-6">
+                    <ul style="columns: 2">
+                        <li>C++</li>
+                        <li>HTML</li>
+                        <li>PHP</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>JSON</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-xl-10">
+            <h2>Microsoft Technology Associate</h2>
+            <hr/>
+            <p>
+                In Microsoft's own words, "MTA certifications address a wide spectrum of fundamental technical concepts, assess and validate core technical knowledge, and enhance technical credibility."
+            </p>
+            <p>
+                I took these exams in high school while studying at an applied technology center, and took first place for the state of Utah with my scores for Software Development Fundamentals.
+            </p>
+        </div>
+    </div>    
+    <div class="row">
         <div class="col-12 col-lg-6 col-xl-4 mb-4">
             <mt-showcase [title]="'MTA – Software Development Fundamentals'"
                          [images]="certificationImages['mta-software']">
@@ -33,16 +70,21 @@
                          [images]="certificationImages['mta-html5']">
             </mt-showcase>
         </div>
+    </div>
 
-        <div class="col-12">
+    <div class="row">
+        <div class="col-12 col-xl-10">
             <h2>High School CTE</h2>
-            <p class="lead">
-                My goal throughout high school was to take as many vocational classes as I could to build
-                up my skills. Many of my friends spent all their time miserably slaving away at AP classes so that
-                they could graduate faster. I decided to take classes that would actually have a lasting impact on my life.
-            </p>
             <hr/>
+            <p>
+                My goal throughout high school was to take as many vocational classes as I could to build
+                up my skills. Many of my friends spent all their time miserably slaving away in AP classes so that
+                they could graduate faster, but to what end? I decided to take classes that would actually have a lasting impact on my life.
+            </p>
         </div>
+    </div>
+
+    <div class="row">
         <div class="col-12 col-lg-6 col-xl-4 mb-4">
             <mt-showcase [title]="'CTE – Computer Programming'"
                          [images]="certificationImages['cte-programming']">
@@ -69,8 +111,18 @@
             </mt-showcase>
         </div>
         <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'CTE – Financial Literacy'"
+                         [images]="certificationImages['cte-financial']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
             <mt-showcase [title]="'CTE – Automotive Service'"
                          [images]="certificationImages['cte-auto']">
+            </mt-showcase>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <mt-showcase [title]="'Valvoline - Motor Oil Training'"
+                         [images]="certificationImages['valvoline']">
             </mt-showcase>
         </div>
     </div>
