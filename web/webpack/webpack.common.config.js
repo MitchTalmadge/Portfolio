@@ -117,7 +117,7 @@ const config = {
                     loader: 'file-loader',
                     options: {
                         outputPath: './resources/static',
-                        name: resourceName,
+                        name: '[name].[ext]',
                         esModule: false
                     }
                 }],
