@@ -25,33 +25,39 @@ import {Component, OnInit} from "@angular/core";
 export class MTCertificationsComponent implements OnInit {
 
     public certificationImages: { [id: string]: string[] } = {
-        "mta-software": [
-            require("./images/scaled/SoftwareDevelopmentFundamentals.jpg"),
-        ],
-        "mta-security": [
-            require("./images/scaled/SecurityFundamentals.jpg"),
-        ],
-        "mta-html5": [
-            require("./images/scaled/HTML5ApplicationDevelopmentFundamentals.jpg"),
-        ],
-        "cte-programming": [
-            require("./images/scaled/Skill_Programming.jpg"),
-        ],
-        "cte-tech": [
-            require("./images/scaled/Skill_Foundations_Of_Tech.jpg"),
-        ],
-        "cte-electronics": [
-            require("./images/scaled/Skill_Electronics.jpg"),
-        ],
-        "cte-woodworking": [
-            require("./images/scaled/Skill_Woodworking.jpg"),
-        ],
         "cte-3d": [
-            require("./images/scaled/Skill_3DGraphics.jpg"),
+            require("./images/cte-3d.jpg"),
         ],
         "cte-auto": [
-            require("./images/scaled/Skill_Auto.jpg"),
+            require("./images/cte-auto.jpg"),
         ],
+        "cte-electronics": [
+            require("./images/cte-electronics.jpg"),
+        ],
+        "cte-financial": [
+            require("./images/cte-financial.jpg"),
+        ],
+        "cte-programming": [
+            require("./images/cte-programming.jpg"),
+        ],
+        "cte-tech": [
+            require("./images/cte-tech.jpg"),
+        ],
+        "cte-woodworking": [
+            require("./images/cte-wood.jpg"),
+        ],
+        "mta-software": [
+            require("./images/mta-software.jpg"),
+        ],
+        "mta-security": [
+            require("./images/mta-security.jpg"),
+        ],
+        "mta-html5": [
+            require("./images/mta-html5.jpg"),
+        ],
+        "valvoline": [
+            require("./images/valvoline.jpg"),
+        ]
     };
 
     constructor() {

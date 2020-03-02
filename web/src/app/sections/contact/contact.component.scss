@@ -41,13 +41,13 @@
         width: 50px;
     }
 
-    .email-badge {
+    .email-badge, .resume-badge {
         font-size: 65%;
     }
 }
 
 @include media-breakpoint-up(md) {
-    .email-badge {
+    .email-badge, .resume-badge {
         font-size: 100%;
     }
 }

@@ -17,83 +17,76 @@
   -->
 
 <div class="container">
-    <div class="row pb-3">
-        <div class="col-12 col-xl-8 mb-3 mb-xl-0">
+    <div class="row">
 
-            <!-- Email -->
+        <!-- Email -->
+        <div class="col-12 col-xl-8 mb-3 mb-xl-0">
+            <glass-panel>
+                <glass-panel-header>
+                    <h2 class="text-center"><i class="far fa-envelope"></i> Email Me</h2>
+                    <p class="text-center mb-0 lead">I won't make you use an ugly web form.</p>
+                    <hr />
+                    <p class="text-center mb-0 lead"><a class="email-badge badge badge-secondary"
+                            href="mailto:contact@mitchtalmadge.com">contact@mitchtalmadge.com</a></p>
+                </glass-panel-header>
+            </glass-panel>
+        </div>
+
+        <!-- Resume -->
+        <div class="col-12 col-xl-4">
+            <glass-panel>
+                <glass-panel-header>
+                    <h2 class="text-center"><i class="far fa-file-alt"></i> Résumé</h2>
+                    <p class="text-center mb-0 lead">Updated Oct. 2019</p>
+                    <hr />
+                    <p class="text-center mb-0 lead"><a class="resume-badge badge badge-secondary" [href]="resume"
+                            target="_blank"><i class="fas fa-external-link-alt"></i> Grab a copy.</a></p>
+                </glass-panel-header>
+            </glass-panel>
+        </div>
+            
+    </div>
+
+    <!-- Social Media -->
+    <div class="row mt-3">
+        <div class="col-12 col-xl-8">
             <div class="row">
                 <div class="col-12">
-                    <glass-panel>
-                        <glass-panel-header>
-                            <h2 class="text-center">Email Me</h2>
-                            <p class="text-center mb-0 lead">Just a simple email address.</p>
-                            <hr />
-                            <p class="text-center mb-0 lead"><a class="email-badge badge badge-secondary" href="mailto:contact@mitchtalmadge.com">contact@mitchtalmadge.com</a></p>
-                        </glass-panel-header>
-                    </glass-panel>
-
-                    <hr/>
+                    <h2 class="text-center"><i class="fas fa-network-wired"></i> Find Me on the ARPANET</h2>
+                    <hr />
                 </div>
             </div>
 
-            <!-- Social Media Links -->
             <div class="row">
                 <!-- LinkedIn -->
                 <div class="col-3 d-flex justify-content-center">
                     <a class="mt-social-link" href="https://www.linkedin.com/in/MitchTalmadge" target="_blank">
-                        <img src="images/linkedin.svg" alt="Linked In"/>
+                        <img src="images/linkedin.svg" alt="Linked In" />
                     </a>
                 </div>
 
                 <!-- Github -->
                 <div class="col-3 d-flex justify-content-center">
                     <a class="mt-social-link" href="https://github.com/MitchTalmadge" target="_blank">
-                        <img src="images/github.svg" alt="Git Hub"/>
+                        <img src="images/github.svg" alt="Git Hub" />
                     </a>
                 </div>
 
                 <!-- Stack Overflow -->
                 <div class="col-3 d-flex justify-content-center">
-                    <a class="mt-social-link" href="https://stackoverflow.com/users/2364405/mitch-talmadge" target="_blank">
-                        <img src="images/stackoverflow.svg" alt="Stack Overflow"/>
+                    <a class="mt-social-link" href="https://stackoverflow.com/users/2364405/mitch-talmadge"
+                        target="_blank">
+                        <img src="images/stackoverflow.svg" alt="Stack Overflow" />
                     </a>
                 </div>
 
                 <!-- Twitter -->
                 <div class="col-3 d-flex justify-content-center">
                     <a class="mt-social-link" href="https://twitter.com/MitchTalmadge" target="_blank">
-                        <img src="images/twitter.svg" alt="Twitter"/>
+                        <img src="images/twitter.svg" alt="Twitter" />
                     </a>
                 </div>
             </div>
         </div>
-
-        <!-- Resume -->
-        <div class="d-none d-xl-block col-xl-4">
-            <glass-panel>
-                <glass-panel-header>
-                    <h2 class="text-center mb-0">Résumé</h2>
-                    <p class="text-center">Updated Oct. 20, 2019</p>
-                    <p class="text-center mb-0 lead"><a class="badge badge-secondary" [href]="resume" target="_blank"><i
-                            class="fas fa-external-link-alt"></i> Grab a copy.</a></p>
-                </glass-panel-header>
-                <glass-panel-body>
-                    <a [href]="resume">
-                        <img src="images/resume.png" alt="" style="width: 100%"/>
-                    </a>
-                </glass-panel-body>
-            </glass-panel>
-        </div>
-        <div class="d-xl-none col-12">
-            <glass-panel>
-                <glass-panel-header>
-                    <h2 class="text-center mb-0">Résumé</h2>
-                    <p class="text-center">Updated Oct. 20, 2019</p>
-                    <p class="text-center mb-0"><a class="badge badge-secondary" [href]="resume" target="_blank"><i
-                            class="fas fa-external-link-alt"></i> Grab a copy.</a></p>
-                </glass-panel-header>
-            </glass-panel>
-        </div>
-
     </div>
 </div>
