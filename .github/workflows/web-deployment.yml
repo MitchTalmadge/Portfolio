@@ -7,7 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Environment
-        uses: actions/setup-node@v1.1.0
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
 
       - name: Checkout Repository
         uses: actions/checkout@v1
