@@ -40,8 +40,8 @@ jobs:
         run: echo "mitchtalmadge.com" > web/dist/CNAME
 
       - name: Deploy to gh-pages
-        uses: crazy-max/ghaction-github-pages@v1.0.1
+        uses: crazy-max/ghaction-github-pages@v2
         env:
-          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_PAT }}
         with:
           build_dir: web/dist
