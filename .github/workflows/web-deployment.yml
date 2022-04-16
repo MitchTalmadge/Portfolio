@@ -42,6 +42,6 @@ jobs:
       - name: Deploy to gh-pages
         uses: crazy-max/ghaction-github-pages@v2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           build_dir: web/dist
