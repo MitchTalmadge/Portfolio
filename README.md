@@ -1,5 +1,5 @@
 # Portfolio
-[![Web Deployment Status](https://github.com/MitchTalmadge/Portfolio/workflows/Web%20Deployment/badge.svg)](https://github.com/MitchTalmadge/Portfolio/actions) [![Greenkeeper badge](https://badges.greenkeeper.io/MitchTalmadge/Portfolio.svg)](https://greenkeeper.io/)
+[![Web Deployment Status](https://github.com/MitchTalmadge/Portfolio/workflows/Web%20Deployment/badge.svg)](https://github.com/MitchTalmadge/Portfolio/actions)
 
 My personal portfolio website, built from scratch using Angular. Hosted using GitHub Pages.
 
