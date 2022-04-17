@@ -7,7 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Environment
-        uses: actions/setup-node@v1.1.0
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
 
       - name: Checkout Repository
         uses: actions/checkout@v1
@@ -38,8 +40,8 @@ jobs:
         run: echo "mitchtalmadge.com" > web/dist/CNAME
 
       - name: Deploy to gh-pages
-        uses: crazy-max/ghaction-github-pages@v1.0.1
+        uses: crazy-max/ghaction-github-pages@v2
         env:
-          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           build_dir: web/dist
