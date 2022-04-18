@@ -54,7 +54,7 @@
     "imports-loader": "^1.2.0",
     "json-loader": "^0.5.7",
     "null-loader": "^3.0.0",
-    "raw-loader": "^4.0.0",
+    "raw-loader": "^4.0.2",
     "reflect-metadata": "^0.1.13",
     "sass-loader": "^10.2.0",
     "style-loader": "^1.1.3",
