@@ -38,7 +38,7 @@
   "devDependencies": {
     "@angular/compiler-cli": "^9.0.4",
     "@ngtools/webpack": "^9.1.15",
-    "@types/core-js": "^2.5.3",
+    "@types/core-js": "^2.5.5",
     "@types/jquery": "^3.3.33",
     "@types/node": "^13.7.7",
     "angular-router-loader": "^0.8.5",
