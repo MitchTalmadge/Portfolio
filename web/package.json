@@ -27,7 +27,7 @@
     "particles.js": "^2.0.0",
     "popper.js": "^1.16.1",
     "rxjs": "^6.6.7",
-    "rxjs-compat": "^6.5.4",
+    "rxjs-compat": "^6.6.7",
     "sass": "^1.50.0",
     "svg-url-loader": "^7.1.1",
     "tether": "^1.4.7",
